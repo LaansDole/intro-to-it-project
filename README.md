@@ -1,4 +1,5 @@
 ### Course Information
+
 - University: Royal Melbourne Institution of Technology (RMIT)
 
 - Campus: Saigon South (SGS), Vietnam
@@ -10,30 +11,28 @@
 - Lecturer: Mr. Long
 
 ### Contributors (Roles)
+
 - Supervisor: Mr. Long
 
-
-
 ### Project Information
-- Project name: 
 
-- Purpose: Help users posting their blog in to a website
+- Project name: TinMate
+
+- Purpose: Help RMIT-ers finding teammates
 
 - Functionalities:
 
-Register
-Login
+Adapt from Tinder
 
 ### Technologies used:
 
-Frontend: HTML, 
+Frontend: CSS, Reactjs
 Hosting: GitHub Page
-Project started date: 
+Project started date:
 
 Project finished date:
 
 ### Supporting tools used
 
-- Figma:
-- Microsoft Word
-
+- Figma
+- Material-ui
