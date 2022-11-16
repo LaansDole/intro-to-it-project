@@ -6,7 +6,7 @@
 
 - Course: Intro to IT
 
-- Course code: COSC
+- Course code: COSC2083
 
 - Lecturer: Mr. Long
 
@@ -22,13 +22,13 @@
 
 - Functionalities:
 
-Adapt from Tinder
+Adapted from Tinder 
 
 ### Technologies used:
 
 Frontend: CSS, Reactjs
 Hosting: GitHub Page
-Project started date:
+Project started date: 14/11/2022
 
 Project finished date:
 
