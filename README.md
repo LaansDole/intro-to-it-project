@@ -8,11 +8,13 @@
 
 - Course code: COSC2083
 
-- Lecturer: Mr. Long
+- Lecturer: Mr. Long Nguyen Minh
 
 ### Contributors (Roles)
 
-- Supervisor: Mr. Long
+- Supervisor: Mr. Long Nguyen Minh
+- Frontend Developer: Do Le Long An - s3963207
+- Frontend Developer: 
 
 ### Project Information
 
