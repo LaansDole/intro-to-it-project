@@ -1,31 +1,35 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Suspense } from "react";
+
 import Header from "./Header";
 import TinderCards from "./TinderCards";
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SwipeButtons from "./SwipeButtons";
-import Chats from "./Chats";
+import Chatbox from "./Chatbox";
 import ChatScreen from "./ChatScreen";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route path="/chat/:person">
-            <Header backButton="/chat" />
-            <ChatScreen/>
-          </Route>
-          <Route path="/chat">
-            <Header backButton="/" />
-            <Chats />
-          </Route>
-          <Route path="/">
-            <Header />
-            <TinderCards />
-            <SwipeButtons />
-          </Route>
-        </Switch>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Switch>
+            <Route path="/chat/:person">
+              <Header backButton="/chat" />
+              <ChatScreen/>
+            </Route>
+            <Route path="/chat">
+              <Header backButton="/" />
+              <Chatbox />
+            </Route>
+            <Route path="/">
+              <Header />
+              <TinderCards />
+              <SwipeButtons />
+            </Route>
+          </Switch>
+        </Suspense>
       </Router>
     </div>
   );
