@@ -1,7 +1,6 @@
 .swipeButtons {
-
     position: fixed;
-    bottom: 10vh;
+    bottom: 9vh;
     width:100%;
     display: flex;
     justify-content: space-evenly;
@@ -22,17 +21,9 @@
     color: #ec5e6f !important;
 }
 
-.swipeButtons__star {
-    padding: 3vw !important;
-    color: #62b4f9 !important;
-}
-
 .swipeButtons__right {
     padding: 3vw !important;
     color: #76e2b3 !important;
 }
 
-.swipeButtons__lightning {
-    padding: 3vw !important;
-    color: #915dd1 !important;
-}
+

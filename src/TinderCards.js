@@ -12,7 +12,7 @@ const db = [
     url: Scene1
   },
   {
-    name: "Phuong Anh", 
+    name: "Quynh Anh", 
     url: Scene2
   },
   {
