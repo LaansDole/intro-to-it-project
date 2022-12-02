@@ -19,7 +19,7 @@ h3{ /* placeholder for style */
 .tinderCards__cardContainer {
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 1vh;
 }
 
 /* stacks cards on top of each other */

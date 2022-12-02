@@ -1,13 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Suspense } from "react";
-
 import Header from "./Header";
-import TinderCards from "./TinderCards";
-import SwipeButtons from "./SwipeButtons";
 import Chatbox from "./Chatbox";
 import ChatScreen from "./ChatScreen";
-import BottomNavigation from "./BottomNavigation";
+import HomePage from "./HomePage";
 import "./App.css";
 
 function App() {
@@ -26,9 +23,7 @@ function App() {
             </Route>
             <Route path="/">
               <Header />
-              <BottomNavigation />
-              <TinderCards />
-              <SwipeButtons />
+              <HomePage />
             </Route>
           </Switch>
         </Suspense>

@@ -3,7 +3,7 @@ import Avatar from "@material-ui/core/Avatar";
 import "./ChatScreen.css";
 
 const ChatScreen = () => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState();
   const [messages, setMessages] = useState([
   ]);
 
@@ -15,7 +15,7 @@ const ChatScreen = () => {
   return (
     <div className="chatScreen">
       <p className="chatScreen__timestamp">
-        YOU MATCHED WITH  ON 15/01/2023
+        YOU TWO WAS MATCHED ON 15/01/2023
       </p>
       {messages.map((message) =>
         message.name ? (

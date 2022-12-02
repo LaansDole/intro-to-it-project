@@ -19,10 +19,9 @@
 
 .chatScreen__owntext {
   margin-left: auto;
-  background-color: #29b3cd;
   padding: 15px;
   border-radius: 20px;
-  color: white;
+  color: black;
 }
 
 .chatScreen__form {

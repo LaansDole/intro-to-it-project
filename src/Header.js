@@ -1,11 +1,12 @@
 import React from "react";
 import "./Header.css";
-import PersonIcon from "@material-ui/icons/Person";
+// import PersonIcon from "@material-ui/icons/Person";
 import ForumIcon from "@material-ui/icons/Forum";
 import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { Link, useHistory } from "react-router-dom";
-import TinderIcon from './images/tinderIcon.png';
+import ProfileMenu from './ProfileMenu'
+import TinderIcon from './images/tinMate_logo.png';
 
 function Header({ backButton }) {
   const history = useHistory();
@@ -16,9 +17,7 @@ function Header({ backButton }) {
           <ArrowBackIosIcon className="header__icon" fontSize="large" />
         </IconButton>
       ) : (
-        <IconButton>
-          <PersonIcon className="header__icon" fontSize="large" />
-        </IconButton>
+        <ProfileMenu />
       )}
       <Link to="/">
         <img
