@@ -44,6 +44,8 @@ function TinderCards() {
               className="card"
             >
               <h3>{rmit_er.name}</h3>
+              {/* <h3></h3>
+              <h3></h3> */}
             </div>
           </TinderCard>
         ))}

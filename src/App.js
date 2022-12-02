@@ -7,6 +7,7 @@ import TinderCards from "./TinderCards";
 import SwipeButtons from "./SwipeButtons";
 import Chatbox from "./Chatbox";
 import ChatScreen from "./ChatScreen";
+import BottomNavigation from "./BottomNavigation";
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             </Route>
             <Route path="/">
               <Header />
+              <BottomNavigation />
               <TinderCards />
               <SwipeButtons />
             </Route>

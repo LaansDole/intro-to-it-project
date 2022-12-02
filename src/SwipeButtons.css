@@ -1,6 +1,6 @@
 .swipeButtons {
     position: fixed;
-    bottom: 9vh;
+    bottom: 5vh;
     width:100%;
     display: flex;
     justify-content: space-evenly;
@@ -12,17 +12,17 @@
 }
 
 .swipeButtons__repeat {
-    padding: 3vw !important;
+    padding: 2vw !important;
     color: #f5b748 !important;
 }
 
 .swipeButtons__left {
-    padding: 3vw !important;
+    padding: 2vw !important;
     color: #ec5e6f !important;
 }
 
 .swipeButtons__right {
-    padding: 3vw !important;
+    padding: 2vw !important;
     color: #76e2b3 !important;
 }
 
