@@ -4,11 +4,13 @@ import "./Header.css";
 import ForumIcon from "@material-ui/icons/Forum";
 import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { Link, useHistory } from "react-router-dom";
 import ProfileMenu from './ProfileMenu'
 import TinderIcon from './images/tinMate_logo.png';
 
-function Header({ backButton }) {
+
+function Header({ backButton, frontButton }) {
   const history = useHistory();
   return (
     <div className="header">
@@ -19,18 +21,26 @@ function Header({ backButton }) {
       ) : (
         <ProfileMenu />
       )}
-      <Link to="/">
+      <Link to="/homepage">
         <img
           className="header__logo"
           src={TinderIcon}
           alt="tinder logo"
         />
       </Link>
-      <Link to="/chat">
-        <IconButton>
-          <ForumIcon className="header__icon" fontSize="large" />
+      {frontButton ? (
+        <IconButton onClick={() => history.replace(frontButton)}>
+          <ArrowForwardIosIcon className="header__icon" fontSize="large" />
         </IconButton>
-      </Link>
+      ) : (
+      <div>
+        <Link to="/chat">
+          <IconButton>
+            <ForumIcon className="header__icon" fontSize="large" />
+          </IconButton>
+        </Link>
+      </div>
+      )}
     </div>
   );
 }

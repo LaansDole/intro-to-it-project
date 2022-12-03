@@ -4,7 +4,9 @@ import { Suspense } from "react";
 import Header from "./Header";
 import Chatbox from "./Chatbox";
 import ChatScreen from "./ChatScreen";
+import UserProfile from "./UserProfile";
 import HomePage from "./HomePage";
+import LandingPage from "./LandingPage";
 import "./App.css";
 
 function App() {
@@ -18,12 +20,19 @@ function App() {
               <ChatScreen/>
             </Route>
             <Route path="/chat">
-              <Header backButton="/" />
+              <Header backButton="/homepage" />
               <Chatbox />
             </Route>
-            <Route path="/">
+            <Route path="/profile">
+              <Header frontButton="/homepage" />
+              <UserProfile />
+            </Route>
+            <Route path="/homepage">
               <Header />
               <HomePage />
+            </Route>
+            <Route path="/">
+              <LandingPage />
             </Route>
           </Switch>
         </Suspense>

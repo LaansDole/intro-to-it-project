@@ -14,7 +14,9 @@
 
 - Supervisor: Mr. Long Nguyen Minh
 - Frontend Developer: Do Le Long An - s3963207
-- Frontend Developer: 
+- Frontend Developer: Bui Tuan Anh
+- Frontend Developer: Pham Le Quynh Anh
+- UI/UX Designer and Tester: Do My Phuoc
 
 ### Project Information
 
@@ -22,14 +24,12 @@
 
 - Purpose: Help RMIT-ers finding teammates
 
-- Functionalities:
-
-Adapted from Tinder 
+- Functionalities: Adapted from Tinder
 
 ### Technologies used:
 
-Frontend: CSS, Reactjs
-Hosting: GitHub Page
+Frontend: CSS, ReactJS, Material UI
+Hosting: GitHub Page, Netlify
 Project started date: 14/11/2022
 
 Project finished date:
@@ -37,7 +37,6 @@ Project finished date:
 ### Supporting tools used
 
 - Figma
-- Material-ui
 
 ### To Run
 
