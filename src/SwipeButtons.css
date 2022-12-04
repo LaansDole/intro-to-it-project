@@ -1,9 +1,13 @@
 .swipeButtons {
     position: fixed;
-    bottom: 5vh;
+    margin-top: 5vh;
+    margin-left: 600px;
     width:100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 .swipeButtons .MuiIconButton-root {
@@ -14,7 +18,9 @@
 .swipeButtons__repeat {
     padding: 2vw !important;
     color: #f5b748 !important;
+    
 }
+
 
 .swipeButtons__left {
     padding: 2vw !important;
@@ -24,6 +30,8 @@
 .swipeButtons__right {
     padding: 2vw !important;
     color: #76e2b3 !important;
+    
 }
+
 
 
