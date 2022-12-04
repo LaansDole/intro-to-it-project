@@ -8,8 +8,10 @@ const HomePage = () => {
     return (
         <div className="homepage">
             <NavBar />
+            <div className="tindercardpage">
             <TinderCards />
             <SwipeButtons />
+            </div>
         </div>
     )
 }
