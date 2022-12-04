@@ -1,14 +1,14 @@
 .swipeButtons {
     position: absolute;
-    margin-top: 17vh;
+    margin-top: 10vh;
     /* margin-left: 600px; */
     width: 100%;
-    max-width: 95%;
+    max-width: 90%;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
     align-content: center;
-    padding: 50px;
+    padding: 75px;
     
 }
 
