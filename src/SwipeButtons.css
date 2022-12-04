@@ -22,16 +22,16 @@
     color: #f5b748 !important;
     
 } */
+.swipeButtons__right {
+    padding: 2vw !important;
+    color: #76e2b3 !important;
+}
 
 .swipeButtons__left {
     padding: 2vw !important;
     color: #ec5e6f !important;
 }
 
-.swipeButtons__right {
-    padding: 2vw !important;
-    color: #76e2b3 !important;
-}
 
 
 
