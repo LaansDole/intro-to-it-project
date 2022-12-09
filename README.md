@@ -29,14 +29,18 @@
 ### Technologies used:
 
 Frontend: CSS, ReactJS, Material UI
-Hosting: GitHub Page, Netlify
+Hosting: Netlify
 Project started date: 14/11/2022
 
 Project finished date:
 
 ### Supporting tools used
 
-- Figma
+- Figma, Canva
+
+### View our project demo here
+
+[tinmate Project](https://intro-to-it-tinmate.netlify.app/)
 
 ### To Run
 
