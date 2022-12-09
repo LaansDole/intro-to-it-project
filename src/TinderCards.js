@@ -24,9 +24,9 @@ function TinderCards() {
   const rmit_ers = db;
   // const [lastDirection, setLastDirection] = useState();
 
-  const swiped = (direction) => {
-    setLastDirection(direction);
-  }
+  // const swiped = (direction) => {
+  //   setLastDirection(direction);
+  // }
   return (
     <div>
       <div className="tinderCards__cardContainer">
