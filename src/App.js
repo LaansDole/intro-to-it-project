@@ -27,13 +27,17 @@ function App() {
               <Header frontButton="/homepage" />
               <UserProfile />
             </Route>
-            <Route path="/homepage">
+            <Route path="/">
+              <Header />
+              <HomePage />
+            </Route>
+            {/* <Route path="/homepage">
               <Header />
               <HomePage />
             </Route>
             <Route path="/">
               <LandingPage />
-            </Route>
+            </Route> */}
           </Switch>
         </Suspense>
       </Router>
