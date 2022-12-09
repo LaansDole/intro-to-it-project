@@ -1,5 +1,5 @@
 import React from "react";
-import TinderIcon from './images/tinMate_logo.png';
+// import TinderIcon from './images/tinMate_logo.png';
 
 const LandingPage = () => {
     return (
