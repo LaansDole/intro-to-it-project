@@ -1,25 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.16a76c35.chunk.css",
-    "main.js": "/static/js/main.46bbb327.chunk.js",
-    "main.js.map": "/static/js/main.46bbb327.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.772c1402.js",
-    "runtime-main.js.map": "/static/js/runtime-main.772c1402.js.map",
-    "static/js/2.5099a695.chunk.js": "/static/js/2.5099a695.chunk.js",
-    "static/js/2.5099a695.chunk.js.map": "/static/js/2.5099a695.chunk.js.map",
+    "main.css": "/static/css/main.0e46e0e2.css",
+    "main.js": "/static/js/main.d2a657ee.js",
+    "static/media/scene1.png": "/static/media/scene1.9a0cd115104feb85832a.png",
+    "static/media/scene2.png": "/static/media/scene2.cbd84b7eac326321fc90.png",
+    "static/media/scene3.png": "/static/media/scene3.b5a6170330a100d0212b.png",
+    "static/media/tinMate_logo.png": "/static/media/tinMate_logo.68eea6bea8ccf2df2151.png",
     "index.html": "/index.html",
-    "precache-manifest.1fe101d517e0ed83483c7ca3700ec190.js": "/precache-manifest.1fe101d517e0ed83483c7ca3700ec190.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.16a76c35.chunk.css.map": "/static/css/main.16a76c35.chunk.css.map",
-    "static/js/2.5099a695.chunk.js.LICENSE.txt": "/static/js/2.5099a695.chunk.js.LICENSE.txt",
-    "static/media/scene1.png": "/static/media/scene1.5afc07a6.png",
-    "static/media/scene2.png": "/static/media/scene2.302b51fd.png",
-    "static/media/scene3.png": "/static/media/scene3.3da9becc.png"
+    "main.0e46e0e2.css.map": "/static/css/main.0e46e0e2.css.map",
+    "main.d2a657ee.js.map": "/static/js/main.d2a657ee.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.772c1402.js",
-    "static/js/2.5099a695.chunk.js",
-    "static/css/main.16a76c35.chunk.css",
-    "static/js/main.46bbb327.chunk.js"
+    "static/css/main.0e46e0e2.css",
+    "static/js/main.d2a657ee.js"
   ]
 }

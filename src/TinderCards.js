@@ -22,7 +22,7 @@ const db = [
 ];
 function TinderCards() {
   const rmit_ers = db;
-  const [lastDirection, setLastDirection] = useState();
+  // const [lastDirection, setLastDirection] = useState();
 
   const swiped = (direction) => {
     setLastDirection(direction);
