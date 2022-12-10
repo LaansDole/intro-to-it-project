@@ -29,15 +29,15 @@
 
 ### Technologies used:
 
-Frontend: CSS, ReactJS, Material UI
-Hosting: Netlify
-Project started date: 14/11/2022
+- Frontend: CSS, ReactJS, Material UI
+- Hosting: Netlify
+#### Project started date: 14/11/2022
 
-Project finished date:
+#### Project finished date: 24/12/2022
 
 ### Supporting tools used
 
-- Figma, Canva
+- UI Prototype: Figma, Canva
 
 ### To Run
 
