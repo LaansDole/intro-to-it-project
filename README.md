@@ -1,3 +1,4 @@
+# View our project demo here: [TinMate Project Demo](https://intro-to-it-tinmate.netlify.app/)
 ### Course Information
 
 - University: Royal Melbourne Institution of Technology (RMIT)
@@ -37,10 +38,6 @@ Project finished date:
 ### Supporting tools used
 
 - Figma, Canva
-
-### View our project demo here
-
-[tinmate Project](https://intro-to-it-tinmate.netlify.app/)
 
 ### To Run
 
