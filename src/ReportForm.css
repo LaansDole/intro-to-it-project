@@ -1,0 +1,14 @@
+.report_button {
+    border-color: #3DFECA;
+    border-radius: 50%;
+    border-width: 10px;
+    background-color: #3DFECA;
+    font-weight: bolder;
+    font-size: 21px;
+    color: #fe3d71;
+}
+
+.report_button:hover {
+  color: #6A3DFE;
+}
+

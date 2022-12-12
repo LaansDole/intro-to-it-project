@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ChatScreen.css";
+import ReportForm from "./ReportForm";
 
 const ChatScreen = () => {
   const [input, setInput] = useState();
@@ -25,11 +26,14 @@ const ChatScreen = () => {
         <button
           onClick={handleSend}
           type="submit"
-          className="chatScreen__button"
+          className="chatScreen__send"
         >
           SEND
         </button>
       </form>
+      <div className="chatScreen__report">
+        <ReportForm />
+      </div>
     </div>
   );
 };
