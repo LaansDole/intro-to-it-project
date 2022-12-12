@@ -30,7 +30,7 @@ function SwipeButtons() {
         open={open}
         autoHideDuration={1000}
         onClose={handleClose}
-        message="IT IS A MATCH!"
+        message="IT'S A MATCH!"
         style={{
           backgroundColor: "#ec5e6f",
         }}

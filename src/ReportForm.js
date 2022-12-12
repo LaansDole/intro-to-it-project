@@ -33,7 +33,7 @@ export default function ReportForm() {
         aria-labelledby="form-dialog-title"
       >
         <DialogTitle id="form-dialog-title">
-          Report Inappropriate Behavior
+          Report Improper Behavior
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
