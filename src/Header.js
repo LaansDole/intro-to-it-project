@@ -25,7 +25,7 @@ function Header({ backButton, frontButton }) {
         <img
           className="header__logo"
           src={TinderIcon}
-          alt="tinder logo"
+          alt="tinmate logo"
         />
       </Link>
       {frontButton ? (

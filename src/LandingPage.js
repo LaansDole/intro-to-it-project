@@ -9,7 +9,6 @@ const LandingPage = () => {
           src={TinderIcon}
           alt="tinder logo"
             /> */}
-            <h1>This is a Landing Page placeholder</h1>
         </div>
         
     )
