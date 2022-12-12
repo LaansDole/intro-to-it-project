@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import Header from "./Header";
 import Chatbox from "./Chatbox";
 import ChatScreen from "./ChatScreen";
-import UserProfile from "./UserProfile";
+import ProfilePage from "./ProfilePage";
 import HomePage from "./HomePage";
 import LandingPage from "./LandingPage";
 import "./App.css";
@@ -25,7 +25,7 @@ function App() {
             </Route>
             <Route path="/profile">
               <Header frontButton="/homepage" />
-              <UserProfile />
+              <ProfilePage />
             </Route>
             <Route path="/homepage">
               <Header />

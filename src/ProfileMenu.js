@@ -29,9 +29,9 @@ export default function SimpleMenu() {
         onClose={handleClose}
       >
         <Link to="/profile">
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
+          <MenuItem onClick={handleClose}>My Profile</MenuItem>
         </Link>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+        {/* <MenuItem onClick={handleClose}>Edit Profile</MenuItem> */}
         <Link to="/">
           <MenuItem onClick={handleClose}>Logout</MenuItem>
         </Link>
