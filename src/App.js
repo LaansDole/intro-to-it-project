@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Suspense } from "react";
 import Header from "./Header";
-import Chatbox from "./Chatbox";
+import ChatBox from "./ChatBox";
 import ChatScreen from "./ChatScreen";
 import ProfilePage from "./ProfilePage";
 import HomePage from "./HomePage";
@@ -13,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route path="/chat/:person">
               <Header backButton="/chat" />
@@ -21,7 +19,7 @@ function App() {
             </Route>
             <Route path="/chat">
               <Header backButton="/homepage" />
-              <Chatbox />
+              <ChatBox />
             </Route>
             <Route path="/profile">
               <Header frontButton="/homepage" />
@@ -36,7 +34,6 @@ function App() {
               <LandingPage />
             </Route>
           </Switch>
-        </Suspense>
       </Router>
     </div>
   );

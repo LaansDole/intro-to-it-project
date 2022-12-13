@@ -1,12 +1,12 @@
 import React from "react";
-import "./Chatbox.css";
+import "./ChatBox.css";
 import Chat from "./Chat"
 import Tony from "./images/Tony.jpg"
 import TuanAnh from "./images/TuanAnh.jpg"
 import QAnh from "./images/QAnh.jpg"
 import Phuoc from "./images/Phuoc.jpg"
 
-const Chatbox = () => {
+const ChatBox = () => {
   return (
   <div className="chatbox">
       <Chat
@@ -31,4 +31,4 @@ const Chatbox = () => {
   );
 };
 
-export default Chatbox;
+export default ChatBox;
