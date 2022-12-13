@@ -13,17 +13,32 @@ import Typography from "@material-ui/core/Typography";
 import CloseIcon from "@material-ui/icons/Close";
 import DoneAllIcon from "@material-ui/icons/DoneAll";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+// import components of the filter
+import NavListSlider from "./NavListSlider";
+import NavListCheck from "./NavListCheck";
+import NavListSelect from "./NavListSelelect";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    position: "relative"
+    position: "relative",
+    color: "aquamarine",
   },
   title: {
     marginLeft: theme.spacing(2),
     flex: 1,
+    fontFamily: "Times New Roman",
+    fontWeight: "bold",
+    fontSize: "xx-large",
+    color: "aquamarine"
+  },
+  list: {
+    fontFamily: "Times New Roman",
+    fontWeight: "bolder",
+    fontSize: "x-large",
+    color: "black",
     display: "flex",
-    alignContent: "center",
-    margin: "auto"
+    justifyContent: "space-around",
+    alignItems: "center",
   }
 }));
 
@@ -56,7 +71,7 @@ export default function FullScreenDialog() {
               <CloseIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Category
+              Filter Category
             </Typography>
                 <Button autoFocus color="inherit" onClick={handleClose}>
                     <DoneAllIcon />
@@ -64,9 +79,19 @@ export default function FullScreenDialog() {
           </Toolbar>
         </AppBar>
         <List>
-          <ListItem button></ListItem>
+          <ListItem className={classes.list}>
+            No. Passed Courses:
+            <NavListSlider />
+          </ListItem>
           <Divider />
-          <ListItem button></ListItem>
+          <ListItem className={classes.list}>
+            Aim and Goal:
+            <NavListCheck />
+          </ListItem>
+          <Divider />
+          <ListItem className={classes.list}>
+            <NavListSelect />
+          </ListItem>
         </List>
       </Dialog>
     </div>

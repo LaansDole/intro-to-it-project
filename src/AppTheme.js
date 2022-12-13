@@ -34,7 +34,7 @@ const themeOverride = createTheme({
             justifyContent: "center",
             alignItems: "center",
           }
-        }
+        },
     }
   });
   
