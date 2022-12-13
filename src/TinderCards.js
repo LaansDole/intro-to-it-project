@@ -62,37 +62,38 @@ function TinderCards() {
     console.log(lastDirection);
   }
   return (
-    <div>
-      <div className="tinderCards__cardContainer">
-        {rmit_ers.map((rmit_er) => (
-          <TinderCard
-            className="swipe"
-            preventSwipe={["up", "down"]}
-            key = {rmit_er.name}
-            onSwipe = {(dir) => swiped(dir)}
+    <div className="tinderCards__cardContainer">
+      {rmit_ers.map((rmit_er) => (
+        <TinderCard
+          className="swipe"
+          preventSwipe={["up", "down"]}
+          key = {rmit_er.name}
+          onSwipe = {(dir) => swiped(dir)}
+        >
+          <div
+            style={{
+              backgroundImage : "url(" + rmit_er.url + ")"
+            }}
+            className="card"
           >
-            <div
-              style={{
-                backgroundImage : "url(" + rmit_er.url + ")"
-              }}
-              className="card"
-            >
-              <div className={classes.root}>
-                <TinderCardChip
-                    icon={<CheckCircleOutlinedIcon />}
-                    label={rmit_er.YEAR}
-                    color="secondary"
-                />
-                <TinderCardChip
-                    icon={<GradeOutlinedIcon />}
-                    label={rmit_er.GPA}
-                    color="primary"
-                />
-                <h3>{rmit_er.name}</h3>
-              </div>
+            <div className={classes.root}>
+              <TinderCardChip
+                  icon={<CheckCircleOutlinedIcon />}
+                  label={rmit_er.YEAR}
+                  color="secondary"
+              />
+              <TinderCardChip
+                  icon={<GradeOutlinedIcon />}
+                  label={rmit_er.GPA}
+                  color="primary"
+              />
+              <h3>{rmit_er.name}</h3>
             </div>
-          </TinderCard>
-        ))}
+          </div>
+        </TinderCard>
+      ))}
+      <div className="card__swipe">
+        <p>You swipe {lastDirection}</p>
       </div>
     </div>
   );

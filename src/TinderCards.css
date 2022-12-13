@@ -29,6 +29,17 @@ h3 { /* placeholder for style */
     margin-top: 1vh;
 }
 
+.card__swipe {
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 56vh;
+    
+}
+
 /* stacks cards on top of each other */
 .swipe {
     position: absolute;
