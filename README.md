@@ -1,4 +1,5 @@
 # View our project demo here: [TinMate Project Demo](https://intro-to-it-tinmate.netlify.app/)
+
 ### Course Information
 
 - University: Royal Melbourne Institution of Technology (RMIT)
@@ -31,6 +32,7 @@
 
 - Frontend: CSS, ReactJS, Material UI
 - Hosting: Netlify
+
 #### Project started date: 14/11/2022
 
 #### Project finished date: 24/12/2022
@@ -38,7 +40,7 @@
 ### Supporting tools used
 
 - UI Prototype: Figma, Canva
-
+- Prototyping IDE for visualization: CodeSandbox
 ### To Run
 
 ## Available Scripts
