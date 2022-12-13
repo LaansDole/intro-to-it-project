@@ -1,10 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
-import RestoreIcon from '@material-ui/icons/Restore';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import SchoolIcon from '@material-ui/icons/School';
+import NavBarFilter from './NavBarFilter'
 import "./NavBar.css"
 
 const useStyles = makeStyles({
@@ -29,8 +29,8 @@ export default function NavBar() {
         className={classes.root}
         >
         <BottomNavigationAction  label="Nearby" icon={<LocationOnIcon />} />
-        <BottomNavigationAction  label="Recents" icon={<RestoreIcon />} />
         <BottomNavigationAction  label="Same School" icon={<SchoolIcon />} />
+        <BottomNavigationAction  label="More" icon={<NavBarFilter />} />
         </BottomNavigation>
     </div>
   );
