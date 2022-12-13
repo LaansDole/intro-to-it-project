@@ -44,7 +44,7 @@ export default function FullScreenDialog() {
       <IconButton variant="outlined" color="inherit" onClick={handleClickOpen}>
         <MoreHorizIcon />
       </IconButton>
-      <Dialog fullScreen open={open} onClose={handleClose}>
+      <Dialog fullWidth open={open} onClose={handleClose}>
         <AppBar className={classes.appBar}>
           <Toolbar>
             <IconButton
