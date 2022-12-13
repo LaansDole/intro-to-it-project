@@ -1,6 +1,10 @@
 import React from "react";
 import "./Chatbox.css";
 import Chat from "./Chat"
+import Tony from "./images/Tony.jpg"
+import TuanAnh from "./images/TuanAnh.jpg"
+import QAnh from "./images/QAnh.jpg"
+import Phuoc from "./images/Phuoc.jpg"
 
 const Chatbox = () => {
   return (
@@ -9,19 +13,19 @@ const Chatbox = () => {
       name="Tuan Anh"
       message="" 
       timestamp="6 mins ago" 
-      profilePic="CHANG-YOUR-PIC.jpg"
+      profilePic={TuanAnh}
       />
       <Chat
       name="Phuoc"
       message="" 
       timestamp="1 hr ago" 
-      profilePic="CHANGE-YOUR-PIC.jpg"
+      profilePic={Phuoc}
       />
       <Chat
       name="Phuong Anh"
       message="" 
       timestamp="4 hrs ago" 
-      profilePic="CHANGE-YOUR-PIC.jpg"
+      profilePic={QAnh}
       />
   </div>
   );

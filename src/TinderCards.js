@@ -2,22 +2,22 @@ import React, {useState} from "react";
 import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
  //We do not use database from firebase but RMIT instead
-import Scene1 from "./images/scene1.png"
-import Scene2 from "./images/scene2.png"
-import Scene3 from "./images/scene3.png"
+ import TuanAnh from "./images/TuanAnh.jpg"
+ import QAnh from "./images/QAnh.jpg"
+ import Phuoc from "./images/Phuoc.jpg"
 
 const db = [ 
   {
     name: "Phuoc",
-    url: Scene1
+    url: Phuoc
   },
   {
     name: "Quynh Anh", 
-    url: Scene2
+    url: QAnh
   },
   {
     name: "Tuan Anh",
-    url: Scene3
+    url: TuanAnh
   }
 ];
 function TinderCards() {
