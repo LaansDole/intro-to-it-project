@@ -9,6 +9,15 @@ const themeOverride = createTheme({
         disableRipple: true, // No more ripple, on the whole application
       },
     },
+    overrides: {
+        MuiChip: {
+            label: {
+                fontFamily: "Times New Roman",
+                color: "white",
+                fontWeight: "bold",
+            }
+        }
+    }
   });
   
 export default function AppTheme({children}) {
