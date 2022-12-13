@@ -7,7 +7,7 @@ export default function TinderCardChip({icon, label, color}) {
         <div>
             <AppTheme>
                 <Chip 
-                    size="medium"
+                    size="small"
                     icon={icon}
                     label={label}
                     color={color}

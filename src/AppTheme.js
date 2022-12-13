@@ -16,6 +16,23 @@ const themeOverride = createTheme({
                 color: "white",
                 fontWeight: "bold",
             }
+        },
+        MuiSnackbar: {
+          anchorOriginBottomCenter: {
+            fontStyle: "italic",
+          },
+        },
+        MuiSnackbarContent: {
+          message: {
+            borderRadius: "30px",
+            // color: "blue",
+            
+            backgroundColor: "green",
+          },
+          root: {
+            borderRadius: "30px",
+            backgroundColor: "blue",
+          }
         }
     }
   });

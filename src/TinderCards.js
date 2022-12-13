@@ -12,18 +12,18 @@ import QAnh from "./images/QAnh.jpg"
 import Phuoc from "./images/Phuoc.jpg"
 import Tony from "./images/Tony.jpg"
 
-const db = [ 
+const db = [
+  {
+    GPA: "3.7",
+    YEAR: "Year 2",
+    name: "An",
+    url: Tony
+  }, 
   {
     GPA: "4.0",
     YEAR: "Year 3",
     name: "Phuoc",
     url: Phuoc
-  },
-  {
-    GPA: "3.9",
-    YEAR: "Year 1",
-    name: "Quynh Anh", 
-    url: QAnh
   },
   {
     GPA: "3.8",
@@ -32,10 +32,10 @@ const db = [
     url: TuanAnh
   },
   {
-    GPA: "3.7",
-    YEAR: "Year 2",
-    name: "Long An",
-    url: Tony
+    GPA: "3.9",
+    YEAR: "Year 1",
+    name: "Quynh Anh", 
+    url: QAnh
   },
 ];
 
@@ -45,9 +45,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
         alignContent: "flex-start",
     flexWrap: 'wrap',
-    transform: "translateY(12em)",
+    transform: "translate(-10px ,10em)",
     '& > *': {
-      margin: theme.spacing(1),
+      margin: theme.spacing(0.5),
     },
   },
 }));
