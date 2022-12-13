@@ -9,7 +9,7 @@ export default function HeaderChat() {
     return (
         <div className="header__icon">
             <IconButton>
-                <Badge color="secondary" badgeContent={3}S>
+                <Badge color="secondary" badgeContent={4}>
                     <ForumIcon fontSize="large" />
                 </Badge>
             </IconButton>

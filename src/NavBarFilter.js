@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
@@ -14,16 +13,6 @@ import Typography from "@material-ui/core/Typography";
 import CloseIcon from "@material-ui/icons/Close";
 import DoneAllIcon from "@material-ui/icons/DoneAll";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-
-const themeOverride = createTheme({
-    props: {
-      // Name of the component
-      MuiButtonBase: {
-        // The default props to change
-        disableRipple: true, // No more ripple, on the whole application
-      },
-    },
-  });
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -52,7 +41,6 @@ export default function FullScreenDialog() {
 
   return (
     <div>
-    <ThemeProvider theme={themeOverride}>
       <IconButton variant="outlined" color="inherit" onClick={handleClickOpen}>
         <MoreHorizIcon />
       </IconButton>
@@ -81,7 +69,6 @@ export default function FullScreenDialog() {
           <ListItem button></ListItem>
         </List>
       </Dialog>
-    </ThemeProvider>
     </div>
   );
 }
