@@ -16,7 +16,7 @@ export default function CheckboxLabels() {
     };
   
     return (
-        <FormGroup>
+        <FormGroup row>
             <FormControlLabel
             control={
                 <Checkbox 
