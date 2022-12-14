@@ -6,7 +6,7 @@ import TinderCardChip from "./TinderChip";
 import { makeStyles } from '@material-ui/core/styles';
 import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
 import GradeOutlinedIcon from '@material-ui/icons/GradeOutlined';
-// import TinderBio from "./TinderBio";
+import TinderBio from "./TinderBio";
 
 import TuanAnh from "./images/TuanAnh.jpg"
 import QAnh from "./images/QAnh.jpg"
@@ -15,24 +15,28 @@ import Tony from "./images/Tony.jpg"
 
 const db = [
   {
+    bio:"I need sleep",
     GPA: "3.7/4.0",
     YEAR: "Year 2",
     name: "An",
     url: Tony
   }, 
   {
+    bio:"",
     GPA: "4.0/4.0",
     YEAR: "Year 3",
     name: "Phuoc",
     url: Phuoc
   },
   {
+    bio:"",
     GPA: "3.8/4.0",
     YEAR: "Year 1",
     name: "Tuan Anh",
     url: TuanAnh
   },
   {
+    bio:"",
     GPA: "3.9/4.0",
     YEAR: "Year 1",
     name: "Quynh Anh", 
@@ -46,11 +50,14 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
         alignContent: "flex-start",
     flexWrap: 'wrap',
-    transform: "translate(-10px ,10em)",
+    transform: "translate(-10px , 7em)",
     '& > *': {
       margin: theme.spacing(0.5),
     },
   },
+  bio: {
+    position: "relative",
+  }
 }));
 
 function TinderCards() {
@@ -77,6 +84,11 @@ function TinderCards() {
             }}
             className="card"
           >
+            <TinderBio 
+                name={rmit_er.name}
+                bio={rmit_er.bio}
+                classname={classes.bio}
+              />
             <div className={classes.root}>
               <TinderCardChip
                   icon={<CheckCircleOutlinedIcon />}
@@ -89,11 +101,7 @@ function TinderCards() {
                   color="primary"
               />
               <h3>{rmit_er.name}</h3>
-              {/* <TinderBio 
-                name={rmit_er.name}
-              /> */}
             </div>
-            
           </div>
         </TinderCard>
       ))}

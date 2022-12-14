@@ -35,6 +35,11 @@ const themeOverride = createTheme({
             alignItems: "center",
           }
         },
+        MuiDialog: {
+          paper: {
+            borderRadius: "40px",
+          }
+        }
     }
   });
   

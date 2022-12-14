@@ -5,10 +5,10 @@ import Dialog from "@material-ui/core/Dialog";
 import IconButton from "@material-ui/core/IconButton";
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import { DialogContent } from "@material-ui/core";
-import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
-import Toolbar from "@material-ui/core/Toolbar";
 import CloseIcon from "@material-ui/icons/Close";
+import Divider from "@material-ui/core/Divider";
+import AppTheme from "./AppTheme";
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -20,18 +20,19 @@ const useStyles = makeStyles((theme) => ({
             fontFamily: "Times New Roman",
             fontWeight: "bold",
         },
-        marginLeft: theme.spacing(2),
-        flex: 1,
+        marginLeft: theme.spacing(5),
         fontFamily: "Times New Roman",
         fontWeight: "bold",
-        fontSize: "xx-large",
+        fontSize: "x-large",
     },
     root: {
-        transform: "translate(22em, -80px)",
+        display: "flex",
+        justifyContent: "flex-start",
+        alignItems: 'center',
     }
 }));
 
-export default function TinderBio({name, bio}) {
+export default function TinderBio({name, bio, classname}) {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
@@ -43,13 +44,13 @@ export default function TinderBio({name, bio}) {
         setOpen(false);
     };
     return (
-        <div className={classes.root}>
+        <div className={classname}>
             <IconButton color="secondary" onClick={handleClickOpen}>
                 <FingerprintIcon color="secondary" fontSize="large" />
             </IconButton>
-            <Dialog fullWidth open={open} onClose={handleClose}>
-                <AppBar className={classes.appBar}>
-                    <Toolbar>
+            <AppTheme>
+                <Dialog fullWidth open={open} onClose={handleClose}>
+                    <DialogContent className={classes.root}>
                         <IconButton
                         edge="end"
                         color="inherit"
@@ -61,14 +62,15 @@ export default function TinderBio({name, bio}) {
                         <Typography variant="h6" className={classes.title}>
                             {name}'s Bio
                         </Typography>
-                    </Toolbar>
-                </AppBar>
-                <DialogContent>
-                    <Typography variant="h5" className={classes.content}>
-                        {bio} This is a placeholder
-                    </Typography>
-                </DialogContent>
-            </Dialog>
+                    </DialogContent>
+                    <Divider />
+                    <DialogContent>
+                        <Typography variant="h5" className={classes.content}>
+                            {bio}
+                        </Typography>
+                    </DialogContent>
+                </Dialog>
+            </AppTheme>
         </div>
     )
 }
