@@ -16,19 +16,27 @@ const useStyles = makeStyles((theme) => ({
         color: "aquamarine",
     },
     title: {
-        content: {
-            fontFamily: "Times New Roman",
-            fontWeight: "bold",
-        },
         marginLeft: theme.spacing(5),
         fontFamily: "Times New Roman",
         fontWeight: "bold",
         fontSize: "x-large",
     },
+    content: {
+        fontFamily: "Times New Roman",
+        fontWeight: "bold",
+        fontSize: "large",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    },
     root: {
         display: "flex",
         justifyContent: "flex-start",
         alignItems: 'center',
+    },
+    bio: {
+        fontFamily: "Times New Roman",
+        fontWeight: "bold",
     }
 }));
 
@@ -45,8 +53,9 @@ export default function TinderBio({name, bio, classname}) {
     };
     return (
         <div className={classname}>
-            <IconButton color="secondary" onClick={handleClickOpen}>
-                <FingerprintIcon color="secondary" fontSize="medium" />
+            <IconButton color="secondary" onClick={handleClickOpen} className={classes.bio}>
+                <FingerprintIcon color="secondary" fontSize="small" />
+                Bio
             </IconButton>
             <AppTheme>
                 <Dialog fullWidth open={open} onClose={handleClose}>

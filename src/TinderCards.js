@@ -15,7 +15,7 @@ import Tony from "./images/Tony.jpg"
 
 const db = [
   {
-    bio:"I need sleep",
+    bio:"Hi, my name is Do Le Long An and I am learning to be a Web Developer",
     GPA: "3.7/4.0",
     YEAR: "Year 2",
     name: "An",
@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   bio: {
     position: "absolute",
     backgroundColor: "#5EECDB",
-    width: "60px",
+    width: "100px",
     borderRadius: "100px",
     '@media screen and (max-width: 1200px)' : {
       position: 'relative',
