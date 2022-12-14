@@ -46,7 +46,7 @@ export default function TinderBio({name, bio, classname}) {
     return (
         <div className={classname}>
             <IconButton color="secondary" onClick={handleClickOpen}>
-                <FingerprintIcon color="secondary" fontSize="large" />
+                <FingerprintIcon color="secondary" fontSize="medium" />
             </IconButton>
             <AppTheme>
                 <Dialog fullWidth open={open} onClose={handleClose}>

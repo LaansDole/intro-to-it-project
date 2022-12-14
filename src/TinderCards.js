@@ -50,13 +50,26 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
         alignContent: "flex-start",
     flexWrap: 'wrap',
-    transform: "translate(-10px , 7em)",
+    transform: "translate(-10px , 9em)",
     '& > *': {
       margin: theme.spacing(0.5),
     },
+    '@media screen and (min-height: 1000px)': {
+        transform: "translateY(14em)",
+    },
+    '@media screen and (max-width: 540px) and (max-height: 750px)': {
+      transform: "translateY(7em)",
+    }
   },
   bio: {
-    position: "relative",
+    position: "absolute",
+    backgroundColor: "#5EECDB",
+    width: "60px",
+    borderRadius: "100px",
+    '@media screen and (max-width: 1200px)' : {
+      position: 'relative',
+      display: "flex",
+    }
   }
 }));
 
@@ -80,7 +93,7 @@ function TinderCards() {
         >
           <div
             style={{
-              backgroundImage : "url(" + rmit_er.url + ")"
+              backgroundImage : "url(" + rmit_er.url + ")",
             }}
             className="card"
           >
