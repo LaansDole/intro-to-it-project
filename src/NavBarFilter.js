@@ -71,7 +71,7 @@ export default function FullScreenDialog() {
               <CloseIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Filter Category
+              Filter
             </Typography>
                 <Button autoFocus color="inherit" onClick={handleClose}>
                     <DoneAllIcon />
