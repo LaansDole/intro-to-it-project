@@ -4,9 +4,10 @@ import "./TinderCards.css";
  //We do not use database from firebase but RMIT instead
 import TinderCardChip from "./TinderChip";
 import { makeStyles } from '@material-ui/core/styles';
-import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
-import GradeOutlinedIcon from '@material-ui/icons/GradeOutlined';
-import TinderBio from "./TinderBio";
+import HomeIcon from '@material-ui/icons/Home';
+import LanguageIcon from '@material-ui/icons/Language';
+import GradeIcon from '@material-ui/icons/Grade';
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 
 import Hey from './images/Hey.PNG'
 import Hi from './images/Hi.png'
@@ -16,18 +17,26 @@ import TV from './images/TV.png'
 const profileDB = [
     {
         about: 'ReactJS, C++, Python',
+        icon: <EmojiEventsIcon />,
+        color: 'secondary',
         url: Hey
     },
     {
-        about: '3.7/4.0',
+        about: 'GPA: 3.7/4.0',
+        icon: <GradeIcon />,
+        color: 'primary',
         url: TV
     },
     {
         about: 'Web Development',
+        icon: <LanguageIcon />,
+        color: 'secondary',
         url: Hi
     },
     {
         about: 'School: SSET-IT',
+        icon: <HomeIcon />,
+        color: 'primary',
         url: Meme
     }
 ];
@@ -79,7 +88,8 @@ export default function ProfileCard() {
                 <div className={classes.root}>
                 <TinderCardChip
                     label={rmit_er.about}
-                    color="secondary"
+                    icon={rmit_er.icon}
+                    color={rmit_er.color}
                 />
             </div>
           </div>

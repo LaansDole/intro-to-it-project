@@ -20,8 +20,8 @@ export default function NavListSelect() {
     <div>
       <FormControl className={classes.formControl}>
         <InputLabel htmlFor="grouped-select">Program and Courses</InputLabel>
-        <Select defaultValue="" id="grouped-select">
-          <MenuItem value="">None</MenuItem>
+        <Select defaultValue={0} id="grouped-select">
+          <MenuItem value={0}>Intro to IT</MenuItem>
           <ListSubheader>SSET</ListSubheader>
           <MenuItem value={1}>Information Technology</MenuItem>
           <MenuItem value={2}>Software Engineering</MenuItem>

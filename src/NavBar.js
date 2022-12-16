@@ -7,6 +7,8 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import SchoolIcon from '@material-ui/icons/School';
 import NavBarFilter from './NavBarFilter'
 import AppTheme from './AppTheme';
+import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+
 import "./NavBar.css"
 
 const useStyles = makeStyles({
@@ -32,7 +34,7 @@ export default function NavBar() {
         >
         <BottomNavigationAction  label="Nearby" icon={<LocationOnIcon />} />
         <BottomNavigationAction  label="Same School" icon={<SchoolIcon />} />
-        <BottomNavigationAction  label="More" icon={<NavBarFilter />} />
+        <BottomNavigationAction  label="More" icon={<NavBarFilter icon={<MoreHorizIcon />} title='Filter' />} />
         </BottomNavigation>
       </AppTheme>
     </div>

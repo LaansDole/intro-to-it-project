@@ -12,7 +12,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import CloseIcon from "@material-ui/icons/Close";
 import DoneAllIcon from "@material-ui/icons/DoneAll";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 // import components of the filter
 import NavListSlider from "./NavListSlider";
 import NavListCheck from "./NavListCheck";
@@ -42,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function FullScreenDialog() {
+export default function NavBarFilter({icon, title}) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -57,7 +56,7 @@ export default function FullScreenDialog() {
   return (
     <div>
       <IconButton variant="outlined" color="inherit" onClick={handleClickOpen}>
-        <MoreHorizIcon />
+        {icon}
       </IconButton>
       <Dialog fullWidth open={open} onClose={handleClose}>
         <AppBar className={classes.appBar}>
@@ -71,7 +70,7 @@ export default function FullScreenDialog() {
               <CloseIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Filter
+              {title}
             </Typography>
                 <Button autoFocus color="inherit" onClick={handleClose}>
                     <DoneAllIcon />
