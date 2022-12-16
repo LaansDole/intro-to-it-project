@@ -39,15 +39,15 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "space-between",
         alignContent: "flex-start",
       flexWrap: 'wrap',
-      transform: "translate(-10px , 13em)",
+      transform: "translateY(13em)",
       '& > *': {
         margin: theme.spacing(0.5),
       },
       '@media screen and (min-height: 1000px)': {
-          transform: "translateY(15em)",
+          transform: "translateY(18em)",
       },
       '@media screen and (max-width: 540px) and (max-height: 750px)': {
-        transform: "translateY(9em)",
+        transform: "translateY(12em)",
       }
     },
   }));

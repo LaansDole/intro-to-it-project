@@ -30,7 +30,8 @@ const ProfilePage = () => {
             >
                 <TinderBio 
                     name='Tony'
-                    bio='This is a bio'
+                    bio='Hi, my name is Do Le Long An from Intro to IT course, 
+                    nice to meet you!'
                     bioTitle="Tony's bio"
                     classname={classes.bio}
                 />
