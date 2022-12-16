@@ -15,19 +15,19 @@ import TV from './images/TV.png'
 
 const profileDB = [
     {
-        skills: 'ReactJS, C++, Project Management',
+        about: 'ReactJS, C++, Python',
         url: Hey
     },
     {
-        GPA: '3.7/4.0',
+        about: '3.7/4.0',
         url: TV
     },
     {
-        major: 'Web Development',
+        about: 'Web Development',
         url: Hi
     },
     {
-        school: 'SSET - Information Technology',
+        about: 'School: SSET-IT',
         url: Meme
     }
 ];
@@ -36,28 +36,19 @@ const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
       flexDirection: "column",
-          alignContent: "flex-start",
+        justifyContent: "space-between",
+        alignContent: "flex-start",
       flexWrap: 'wrap',
-      transform: "translate(-10px , 9em)",
+      transform: "translate(-10px , 13em)",
       '& > *': {
         margin: theme.spacing(0.5),
       },
       '@media screen and (min-height: 1000px)': {
-          transform: "translateY(14em)",
+          transform: "translateY(15em)",
       },
       '@media screen and (max-width: 540px) and (max-height: 750px)': {
-        transform: "translateY(7em)",
+        transform: "translateY(9em)",
       }
-    },
-    container: {
-        position: "absolute",
-    backgroundColor: "#5EECDB",
-    width: "180px",
-    borderRadius: "100px",
-    '@media screen and (max-width: 1200px)' : {
-      position: 'relative',
-      display: "flex",
-        }
     },
   }));
 
@@ -72,7 +63,7 @@ export default function ProfileCard() {
     }
     return (
     <div className="tinderCards__cardContainer">
-      {profile.map((rmit_er) => (
+        {profile.map((rmit_er) => (
         <TinderCard
           className="swipe"
           preventSwipe={["up", "down"]}
@@ -87,14 +78,8 @@ export default function ProfileCard() {
             >
                 <div className={classes.root}>
                 <TinderCardChip
-                    label={rmit_er.major}
+                    label={rmit_er.about}
                     color="secondary"
-                />
-                <TinderBio 
-                    label={rmit_er.school}
-                    bioTitle="Tony's Bio"
-                    classname={classes.container}
-                    name='Tony'
                 />
             </div>
           </div>
