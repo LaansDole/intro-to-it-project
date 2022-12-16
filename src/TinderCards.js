@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
       transform: "translateY(7em)",
     }
   },
-  bio: {
+  container: {
     position: "absolute",
     backgroundColor: "#5EECDB",
     width: "100px",
@@ -69,8 +69,8 @@ const useStyles = makeStyles((theme) => ({
     '@media screen and (max-width: 1200px)' : {
       position: 'relative',
       display: "flex",
-    }
-  }
+      }
+    },
 }));
 
 function TinderCards() {
@@ -100,7 +100,8 @@ function TinderCards() {
             <TinderBio 
                 name={rmit_er.name}
                 bio={rmit_er.bio}
-                classname={classes.bio}
+                bioTitle='Bio'
+                classname={classes.container}
               />
             <div className={classes.root}>
               <TinderCardChip

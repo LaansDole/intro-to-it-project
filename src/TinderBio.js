@@ -37,10 +37,10 @@ const useStyles = makeStyles((theme) => ({
     bio: {
         fontFamily: "Times New Roman",
         fontWeight: "bold",
-    }
+    },
 }));
 
-export default function TinderBio({name, bio, classname}) {
+export default function TinderBio({name, bio, bioTitle, classname}) {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
@@ -55,7 +55,7 @@ export default function TinderBio({name, bio, classname}) {
         <div className={classname}>
             <IconButton color="secondary" onClick={handleClickOpen} className={classes.bio}>
                 <FingerprintIcon color="secondary" fontSize="small" />
-                Bio
+                {bioTitle}
             </IconButton>
             <AppTheme>
                 <Dialog fullWidth open={open} onClose={handleClose}>

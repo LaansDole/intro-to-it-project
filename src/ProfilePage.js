@@ -1,10 +1,10 @@
 import React from "react";
-import ProfileNavBar from "./ProfileNavBar"
+import ProfileCard from './ProfileCard'
 
 const ProfilePage = () => {
     return (
         <div>
-            <ProfileNavBar />
+            <ProfileCard />
         </div>
     )
 }
