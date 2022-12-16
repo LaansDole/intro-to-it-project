@@ -96,7 +96,7 @@ export default function ProfileCard() {
         </TinderCard>
         ))}
         <div className="card__swipe">
-            <p>You have swiped {lastDirection} on Tony</p>
+            <p>You swipe {lastDirection} on Tony</p>
         </div>
     </div>
     );
