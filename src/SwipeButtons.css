@@ -19,12 +19,12 @@
 }
 
 .swipeButtons__like.MuiIconButton-root:hover {
-    background-color: #ec5e6f;
+    background-color: #f44336;
 }
 
 .swipeButtons__dislike {
     padding: 2vw !important;
-    color: #ec5e6f !important;
+    color: #f44336 !important;
     transform: translateX(50%);
     border-radius: 100%;
     border: none;

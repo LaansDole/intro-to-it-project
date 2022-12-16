@@ -37,7 +37,8 @@ const ProfilePage = () => {
                     bioTitle="Tony's bio"
                     classname={classes.bio}
                 />
-                <Fab color="primary" aria-label="edit">                    <NavBarFilter 
+                <Fab color="secondary" aria-label="edit">                    
+                <NavBarFilter 
                         icon={<EditIcon />} 
                         title='Edit Profile'
                     />
