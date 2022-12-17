@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ChatScreen.css";
-import ReportForm from "./ReportForm";
+import ReportForm from "../report/ReportForm";
 
 const ChatScreen = () => {
   const [input, setInput] = useState();

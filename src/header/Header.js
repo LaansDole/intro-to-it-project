@@ -5,8 +5,8 @@ import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { Link, useHistory } from "react-router-dom";
-import ProfileMenu from './ProfileMenu'
-import TinderIcon from './images/tinMate_logo.png';
+import ProfileMenu from "../profile/ProfileMenu";
+import TinderIcon from '../images/tinMate_logo.png';
 import HeaderChat from "./HeaderChat";
 
 function Header({ backButton, frontButton }) {

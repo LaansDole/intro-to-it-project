@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./Header";
-import ChatBox from "./ChatBox";
-import ChatScreen from "./ChatScreen";
-import ProfilePage from "./ProfilePage";
-import HomePage from "./HomePage";
-import LandingPage from "./LandingPage";
+import Header from "./header/Header";
+import ChatBox from "./chat/ChatBox";
+import ChatScreen from "./chat/ChatScreen";
+import ProfilePage from "./profile/ProfilePage";
+import HomePage from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage";
 import "./App.css";
 
 function App() {

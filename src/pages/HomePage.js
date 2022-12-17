@@ -1,7 +1,7 @@
 import React from "react";
-import TinderCards from "./TinderCards";
-import SwipeButtons from "./SwipeButtons";
-import NavBar from "./NavBar";
+import TinderCards from "../tindercard/TinderCards";
+import SwipeButtons from "../swipebutton/SwipeButtons";
+import NavBar from "../navbar/NavBar";
 import './HomePage.css';
 
 const HomePage = () => {

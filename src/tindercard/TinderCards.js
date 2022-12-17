@@ -8,10 +8,10 @@ import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
 import GradeOutlinedIcon from '@material-ui/icons/GradeOutlined';
 import TinderBio from "./TinderBio";
 
-import TuanAnh from "./images/TuanAnh.jpg"
-import QAnh from "./images/QAnh.jpg"
-import Phuoc from "./images/Phuoc.jpg"
-import Tony from "./images/Tony.jpg"
+import TuanAnh from "../images/TuanAnh.jpg"
+import QAnh from "../images/QAnh.jpg"
+import Phuoc from "../images/Phuoc.jpg"
+import Tony from "../images/Tony.jpg"
 
 const db = [
   {

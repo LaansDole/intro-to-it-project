@@ -6,7 +6,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import SchoolIcon from '@material-ui/icons/School';
 import NavBarFilter from './NavBarFilter'
-import AppTheme from './AppTheme';
+import AppTheme from '../AppTheme';
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 import "./NavBar.css"

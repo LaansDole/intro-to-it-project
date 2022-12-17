@@ -8,7 +8,7 @@ import { DialogContent } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import CloseIcon from "@material-ui/icons/Close";
 import Divider from "@material-ui/core/Divider";
-import AppTheme from "./AppTheme";
+import AppTheme from "../AppTheme";
 
 const useStyles = makeStyles((theme) => ({
     appBar: {

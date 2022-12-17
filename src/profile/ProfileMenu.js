@@ -5,7 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import PersonIcon from "@material-ui/icons/Person";
 import { Link } from 'react-router-dom';
 
-export default function SimpleMenu() {
+export default function ProfileMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {

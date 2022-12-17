@@ -5,7 +5,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import IconButton from "@material-ui/core/IconButton";
 import Snackbar from "@material-ui/core/Snackbar";
-import AppTheme from "./AppTheme";
+import AppTheme from "../AppTheme";
 
 function SwipeButtons() {
   const [open, setOpen] = React.useState(false);

@@ -1,18 +1,18 @@
 import React, {useState} from "react";
 import TinderCard from "react-tinder-card";
-import "./TinderCards.css";
+import "../tindercard/TinderCards.css";
  //We do not use database from firebase but RMIT instead
-import TinderCardChip from "./TinderChip";
+import TinderCardChip from "../tindercard/TinderChip";
 import { makeStyles } from '@material-ui/core/styles';
 import HomeIcon from '@material-ui/icons/Home';
 import LanguageIcon from '@material-ui/icons/Language';
 import GradeIcon from '@material-ui/icons/Grade';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 
-import Hey from './images/Hey.PNG'
-import Hi from './images/Hi.png'
-import Meme from './images/Meme.png'
-import TV from './images/TV.png'
+import Hey from '../images/Hey.PNG'
+import Hi from '../images/Hi.png'
+import Meme from '../images/Meme.png'
+import TV from '../images/TV.png'
 
 const profileDB = [
     {

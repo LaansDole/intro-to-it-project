@@ -1,8 +1,8 @@
 import React from "react";
 import ProfileCard from './ProfileCard'
-import TinderBio from './TinderBio'
+import TinderBio from '../tindercard/TinderBio'
 import { makeStyles } from '@material-ui/core/styles';
-import NavBarFilter from "./NavBarFilter";
+import NavBarFilter from "../navbar/NavBarFilter";
 import Fab from '@material-ui/core/Fab';
 import EditIcon from '@material-ui/icons/Edit';
 
