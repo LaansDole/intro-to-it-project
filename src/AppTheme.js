@@ -19,7 +19,6 @@ const themeOverride = createTheme({
         },
         MuiSnackbar: {
           anchorOriginBottomCenter: {
-            
           },
         },
         MuiSnackbarContent: {
