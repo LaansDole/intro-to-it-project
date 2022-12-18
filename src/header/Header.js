@@ -15,7 +15,7 @@ function Header({ backButton, frontButton }) {
     <div className="header">
       {backButton ? (
         <IconButton onClick={() => history.replace(backButton)}>
-          <ArrowBackIosIcon className="header__icon" fontSize="large" />
+          <ArrowBackIosIcon className="header__icon" fontSize="large" color="secondary" />
         </IconButton>
       ) : (
         <ProfileMenu />
@@ -29,7 +29,7 @@ function Header({ backButton, frontButton }) {
       </Link>
       {frontButton ? (
         <IconButton onClick={() => history.replace(frontButton)}>
-          <ArrowForwardIosIcon className="header__icon" fontSize="large" />
+          <ArrowForwardIosIcon className="header__icon" fontSize="large" color="secondary" />
         </IconButton>
       ) : (
         <Link to="/chat">

@@ -38,6 +38,15 @@ const themeOverride = createTheme({
           paper: {
             borderRadius: "40px",
           }
+        },
+        MuiBottomNavigationAction: {
+          wrapper: {
+            color: "#EC5E6F",
+            boxShadow: "rgba(0, 0, 0, 0.15) 2px 2px 2.6px",
+            fontWeight: "bold",
+            height: "75px",
+            borderRadius: "30px",
+          },
         }
     }
   });

@@ -20,7 +20,8 @@ import NavListSelect from "./NavListSelelect";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
-    color: "aquamarine",
+    color: "#5EECDB",
+    backgroundColor: "#EC5E6F"
   },
   title: {
     marginLeft: theme.spacing(2),
@@ -28,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Times New Roman",
     fontWeight: "bold",
     fontSize: "xx-large",
-    color: "aquamarine"
   },
   list: {
     fontFamily: "Times New Roman",
@@ -55,9 +55,9 @@ export default function NavBarFilter({icon, title}) {
 
   return (
     <div>
-      <IconButton variant="outlined" color="inherit" onClick={handleClickOpen}>
+      <Button color="inherit" onClick={handleClickOpen}>
         {icon}
-      </IconButton>
+      </Button>
       <Dialog fullWidth open={open} onClose={handleClose}>
         <AppBar className={classes.appBar}>
           <Toolbar>

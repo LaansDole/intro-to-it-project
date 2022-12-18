@@ -23,7 +23,7 @@ export default function CheckboxLabels() {
                 checked={state.checkedAny} 
                 onChange={handleChange} 
                 name="checkedAny"
-                color="primary" 
+                color="secondary" 
                 indeterminate
                 />}
                 label="Any"
@@ -34,7 +34,7 @@ export default function CheckboxLabels() {
                 checked={state.checkedCR} 
                 onChange={handleChange} 
                 name="checkedCR"
-                color="primary"
+                color="secondary"
                 />}
                 label="CR"
             />
@@ -44,7 +44,7 @@ export default function CheckboxLabels() {
                 checked={state.checkedDI} 
                 onChange={handleChange} 
                 name="checkedDI" 
-                color="primary"
+                color="secondary"
                 />}
                 label="DI"
             />
@@ -54,7 +54,7 @@ export default function CheckboxLabels() {
                 checked={state.checkedHD} 
                 onChange={handleChange} 
                 name="checkedHD" 
-                color="primary"
+                color="secondary"
                 />}
                 label="HD"
             />

@@ -16,7 +16,7 @@ import TV from '../images/TV.png'
 
 const profileDB = [
     {
-        about: 'ReactJS, C++, Python',
+        about: 'ReactJS, C++, JSS',
         icon: <EmojiEventsIcon />,
         color: 'secondary',
         url: Hey

@@ -27,6 +27,7 @@ export default function NavListSlider() {
         marks
         min={3}
         max={18}
+        color="secondary"
       />
     </div>
   );
