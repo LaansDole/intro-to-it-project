@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     position: "absolute",
-    backgroundColor: "#5EECDB",
+    backgroundColor: "#11071F",
     width: "100px",
     borderRadius: "100px",
     '@media screen and (max-width: 1200px)' : {

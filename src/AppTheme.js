@@ -41,12 +41,17 @@ const themeOverride = createTheme({
         },
         MuiBottomNavigationAction: {
           wrapper: {
-            color: "white",
+            color: "red",
             boxShadow: 'rgba(19, 4, 40, 1) 0px 5px, rgba(37, 16, 67, 0.7) 0px 10px, rgba(56, 18, 109, 0.7) 0px 15px, rgba(38, 16, 69, 1) 0px 20px',
             fontWeight: "bold",
             height: "75px",
             borderRadius: "30px",
           },
+        },
+        MuiIconButton: {
+          root: {
+            color: "#7127BA",
+          }
         },
     }
   });

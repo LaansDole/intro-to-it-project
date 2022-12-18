@@ -13,8 +13,7 @@
 h3 { /* placeholder for style */
     font-size: x-large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,226,1) 100%);
+    background: radial-gradient(circle, rgba(26,11,46,1) 0%, rgba(152,94,236,1) 60%);
     border-radius: 30px;
     border: 0;
     color: white;
