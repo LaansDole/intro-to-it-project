@@ -1,14 +1,15 @@
 .report_button {
-    border-color: #3DFECA;
-    border-radius: 50%;
-    border-width: 10px;
-    background-color: #3DFECA;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: rgb(107,35,191);
+    background: linear-gradient(90deg, rgba(107,35,191,1) 30%, rgba(48,16,128,1) 74%);
     font-weight: bolder;
+    padding: 10px;
     font-size: 21px;
-    color: #fe3d71;
+    color: red;
 }
 
 .report_button:hover {
-  color: #6A3DFE;
+  color: violet;
 }
 

@@ -14,7 +14,7 @@ import "./NavBar.css"
 const useStyles = makeStyles({
   root: {
     width: 1500,
-    backgroundColor: "#5EECDB",
+    backgroundColor: "#11071F",
   },
 });
 

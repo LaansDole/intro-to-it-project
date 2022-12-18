@@ -32,7 +32,6 @@ const ProfilePage = () => {
                     display: "flex",
                     justifyContent: "center",
                     paddingBottom: "3vh",
-                    transform: "translateX(20px)"
                 }}        
             >
                 <TinderBio 

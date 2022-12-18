@@ -5,8 +5,9 @@
     padding: 20px;
     height: 70px;
     border-bottom: 1px solid #fafafa;
+    color: white;
   }
-  
+
   a {
       text-decoration: none;
       color:inherit;
@@ -17,14 +18,10 @@
   }
   
   .chat__details p {
-      color: gray;
+      color: white;
   }
   
   .chat__image {
       margin-right:20px;
-  }
-  
-  .chat__timestamp {
-      color: lightgray;
   }
   

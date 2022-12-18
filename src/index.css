@@ -17,5 +17,9 @@ code {
 }
 
 html {
-  background-color: #5EECDB;
+  background-color: #11071F;
+  background-image: url('./images/Gradient.png');
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: center 200px;
 }
