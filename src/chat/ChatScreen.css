@@ -14,17 +14,14 @@
 
 .chatScreen__form {
   display:flex;
-  padding: 5px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid lightgray;
 }
 
 .chatScreen__input {
   flex: 1;
   padding: 10px;
-  border: none;
 }
 
 .chatScreen__send {
