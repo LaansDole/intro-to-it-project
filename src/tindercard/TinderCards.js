@@ -18,14 +18,14 @@ const db = [
     bio:"Hi, my name is Do Le Long An and I am learning to be a Web Developer",
     GPA: "3.7/4.0",
     YEAR: "Year 2",
-    name: "An",
+    name: "Long An",
     url: Tony
   }, 
   {
     bio:"",
     GPA: "4.0/4.0",
     YEAR: "Year 3",
-    name: "Phuoc",
+    name: "My Phuoc",
     url: Phuoc
   },
   {
