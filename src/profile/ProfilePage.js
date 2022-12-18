@@ -21,7 +21,12 @@ const useStyles = makeStyles((theme) => ({
 const ProfilePage = () => {
     const classes = useStyles();
     return (
-        <div>
+        <div 
+        className="profile__navbar"
+        style={{
+            paddingTop: "3vh",
+        }}
+        >
             <div
                 style={{
                     display: "flex",
