@@ -112,7 +112,7 @@ function TinderCards() {
               <TinderCardChip
                   icon={<GradeOutlinedIcon />}
                   label={rmit_er.GPA}
-                  color="primary"
+                  color="secondary"
               />
               <h3>{rmit_er.name}</h3>
             </div>

@@ -24,7 +24,7 @@ const profileDB = [
     {
         about: 'GPA: 3.7/4.0',
         icon: <GradeIcon />,
-        color: 'primary',
+        color: 'secondary',
         url: TV
     },
     {
@@ -36,7 +36,7 @@ const profileDB = [
     {
         about: 'School: SSET-IT',
         icon: <HomeIcon />,
-        color: 'primary',
+        color: 'secondary',
         url: Meme
     }
 ];
