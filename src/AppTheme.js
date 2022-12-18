@@ -24,7 +24,7 @@ const themeOverride = createTheme({
         MuiSnackbarContent: {
           message: {
             fontWeight: "bolder",
-            color: "#ec5e6f",
+            color: "red",
           },
           root: {
             borderRadius: "30px",
