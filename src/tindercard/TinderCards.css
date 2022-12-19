@@ -28,7 +28,7 @@ h3 { /* placeholder for style */
     margin-top: 3vh;
 }
 
-.card__swipe {
+.swipe__direction {
     font-weight: bold;
     position: absolute;
     display: flex;
@@ -40,7 +40,7 @@ h3 { /* placeholder for style */
 }
 
 @media screen and (max-width: 700px) and (max-height: 680px) {
-    .card__swipe {
+    .swipe__direction {
         display: none
     }
 }

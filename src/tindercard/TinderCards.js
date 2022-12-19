@@ -119,7 +119,7 @@ function TinderCards() {
           </div>
         </TinderCard>
       ))}
-      <div className="card__swipe">
+      <div className="swipe__direction">
         <p>You have swiped {lastDirection}</p>
       </div>
     </div>
