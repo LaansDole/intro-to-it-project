@@ -20,7 +20,7 @@ import NavListSelect from "./NavListSelelect";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
-    color: "aquamarine",
+    color: "white",
     backgroundColor: "#EC5E6F"
   },
   title: {
