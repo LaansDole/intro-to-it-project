@@ -7,35 +7,32 @@
     border-radius: 20px;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 18px 53px 0px rgba(0,0,0,0.3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    /* box-shadow: 0px 14px 45px 0px rgba(0,0,0,0.3); */
 }
 
 h3 { /* placeholder for style */
     font-size: 27px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: #11071F;
     border-radius: 30px;
     border: 0;
     color: white;
     height: 48;
-    padding: 0 30px;
-    box-shadow: radial-gradient(circle, rgba(26,11,46,1) 0%, rgba(152,94,236,1) 60%);
+    /* box-shadow: radial-gradient(circle, rgba(26,11,46,1) 0%, rgba(152,94,236,1) 60%); */
 }
 
 .tinderCards__cardContainer {
     display: flex;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 9vh;
 }
 
 .swipe__direction {
     font-weight: bold;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 56vh;
-    padding-top: 3vh;
+    position: relative;
+    text-align: center;
+    padding-top: 7vh;
     color: #F50057;
 }
 

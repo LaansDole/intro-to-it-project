@@ -17,18 +17,14 @@ const themeOverride = createTheme({
                 fontWeight: "bold",
             }
         },
-        MuiSnackbar: {
-          anchorOriginBottomCenter: {
-          },
-        },
         MuiSnackbarContent: {
           message: {
             fontWeight: "bolder",
-            color: "aquamarine",
+            color: "white",
           },
           root: {
             borderRadius: "30px",
-            backgroundColor: "#EC5E6F",
+            backgroundColor: "#F50057",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -41,16 +37,21 @@ const themeOverride = createTheme({
         },
         MuiBottomNavigationAction: {
           wrapper: {
-            color: "#f24855",
-            boxShadow: 'rgba(19, 4, 40, 1) 0px 5px, rgba(37, 16, 67, 0.7) 0px 10px, rgba(56, 18, 109, 0.7) 0px 15px, rgba(38, 16, 69, 1) 0px 20px',
             fontWeight: "bold",
             height: "75px",
-            borderRadius: "30px",
           },
+          root: {
+            '&:hover': {
+              textDecoration: "underline",
+            },
+            '&$selected': {
+              color: "#F50057",
+            }
+          }
         },
         MuiIconButton: {
           root: {
-            color: "#7127BA",
+            color: "#adafbb",
           }
         },
     }

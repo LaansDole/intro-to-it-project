@@ -7,15 +7,18 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import SchoolIcon from '@material-ui/icons/School';
 import NavBarFilter from './NavBarFilter'
 import AppTheme from '../AppTheme';
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import TuneIcon from "@material-ui/icons/Tune";
 
 import "./NavBar.css"
 
 const useStyles = makeStyles({
   root: {
     width: 1500,
-    backgroundColor: "#11071F",
+    backgroundColor: "#F3F3F3",
   },
+  label: {
+    color: "#ADAFBB",
+  }
 });
 
 export default function NavBar() {
@@ -30,12 +33,12 @@ export default function NavBar() {
         onChange={(event, newValue) => {
             setValue(newValue);
         }}
-        showLabels={false}
+        showLabels
         className={classes.root}
         >
-        <BottomNavigationAction  label="Nearby" icon={<LocationOnIcon />} />
-        <BottomNavigationAction  label="Same School" icon={<SchoolIcon />} />
-        <BottomNavigationAction  label="More" icon={<NavBarFilter icon={<MoreHorizIcon />} title='Filter' />} />
+        <BottomNavigationAction  label="Nearby" icon={<LocationOnIcon />} className={classes.label} />
+        <BottomNavigationAction  label="Same School" icon={<SchoolIcon />} className={classes.label} />
+        <BottomNavigationAction  label="More" icon={<NavBarFilter icon={<TuneIcon />} title='Filter' />} className={classes.label} />
         </BottomNavigation>
       </AppTheme>
     </div>

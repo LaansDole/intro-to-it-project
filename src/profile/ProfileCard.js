@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
         alignContent: "flex-start",
       flexWrap: 'wrap',
       transform: "translateY(13em)",
+      paddingBottom: "15px",
       '& > *': {
         margin: theme.spacing(0.5),
       },
@@ -59,6 +60,14 @@ const useStyles = makeStyles((theme) => ({
         transform: "translateY(12em)",
       }
     },
+    swiped: {
+      fontWeight: "bold",
+      position: "relative",
+      textAlign: "center",
+      color: "#f50057",
+      marginTop: "-60px",
+      paddingBottom: "20px"
+    }
   }));
 
 export default function ProfileCard() {
@@ -72,6 +81,9 @@ export default function ProfileCard() {
     }
     return (
     <div className="tinderCards__cardContainer">
+        <div className={classes.swiped}>
+          <p>You swipe {lastDirection} on Tony</p>
+        </div>
         {profile.map((rmit_er) => (
         <TinderCard
           className="swipe"
@@ -95,9 +107,6 @@ export default function ProfileCard() {
           </div>
         </TinderCard>
         ))}
-        <div className="card__swipe">
-            <p>You swipe {lastDirection} on Tony</p>
-        </div>
     </div>
     );
 }

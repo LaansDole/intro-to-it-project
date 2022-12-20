@@ -4,8 +4,8 @@
     justify-content: space-between;
     padding: 20px;
     height: 70px;
-    border-bottom: 1px solid #fafafa;
-    color: white;
+    border-bottom: 1px solid lightgray;
+    color: black;
   }
 
   a {
@@ -18,7 +18,7 @@
   }
   
   .chat__details p {
-      color: white;
+      color: black;
   }
   
   .chat__image {

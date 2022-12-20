@@ -2,10 +2,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(26,11,46);
-    background: radial-gradient(circle, rgba(26,11,46,1) 0%, rgba(152,94,236,1) 60%);
-    /* border-radius: 0px 0px 50px 50px; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: #F3F3F3;
     height: 115px;
     padding-bottom: 1vh;
 }

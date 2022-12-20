@@ -4,73 +4,80 @@ import "./TinderCards.css";
  //We do not use database from firebase but RMIT instead
 import TinderCardChip from "./TinderChip";
 import { makeStyles } from '@material-ui/core/styles';
-import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
-import GradeOutlinedIcon from '@material-ui/icons/GradeOutlined';
+import StarIcon from '@material-ui/icons/Star';
 import TinderBio from "./TinderBio";
 
 import TuanAnh from "../images/TuanAnh.jpg"
 import QAnh from "../images/QAnh.jpg"
 import Phuoc from "../images/Phuoc.jpg"
-import Tony from "../images/Tony.jpg"
+import Tony from "../images/AnDo.JPG"
 
 const db = [
   {
     bio:"Hi, my name is Do Le Long An and I am learning to be a Web Developer",
     GPA: "3.7/4.0",
-    YEAR: "Year 2",
-    name: "Long An",
+    name: "Long An, SSET",
     url: Tony
   }, 
   {
     bio:"",
     GPA: "4.0/4.0",
-    YEAR: "Year 3",
-    name: "My Phuoc",
+    name: "My Phuoc, SBM",
     url: Phuoc
   },
   {
     bio:"",
     GPA: "3.8/4.0",
-    YEAR: "Year 1",
-    name: "Tuan Anh",
+    name: "Tuan Anh, SSET",
     url: TuanAnh
   },
   {
     bio:"",
     GPA: "3.9/4.0",
-    YEAR: "Year 1",
-    name: "Quynh Anh", 
+    name: "Quynh Anh, SSET", 
     url: QAnh
   },
 ];
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  info: {
+    backdropFilter: "brightness(90%) blur(3px)",
     display: 'flex',
-    flexDirection: "column",
+    flexDirection: "column-reverse",
         alignContent: "flex-start",
     flexWrap: 'wrap',
-    transform: "translate(-10px , 9em)",
+    transform: "translateY(12em)",
+    // maxWidth: "250px",
     '& > *': {
       margin: theme.spacing(0.5),
     },
+    '@media screen and (max-width: 1200px)': {
+      transform: "translateY(10em)",
+    },
     '@media screen and (min-height: 1000px)': {
-        transform: "translateY(14em)",
+        transform: "translateY(15em)",
     },
     '@media screen and (max-width: 540px) and (max-height: 750px)': {
-      transform: "translateY(7em)",
+      transform: "translateY(8em)",
     }
   },
-  container: {
+  bioBox: {
     position: "absolute",
-    backgroundColor: "#11071F",
+    backgroundColor: "white",
     width: "100px",
     borderRadius: "100px",
+    boxShadow: "rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset",
     '@media screen and (max-width: 1200px)' : {
       position: 'relative',
       display: "flex",
       }
     },
+  clue: {
+    marginTop: "-50px",
+    position: "absolute",
+    textAlign: "center",
+    color: "#f50057"
+  }
 }));
 
 function TinderCards() {
@@ -84,6 +91,9 @@ function TinderCards() {
   }
   return (
     <div className="tinderCards__cardContainer">
+        <div className={classes.clue}>
+          <h1>Catch your teammate today!</h1>
+        </div>
       {rmit_ers.map((rmit_er) => (
         <TinderCard
           className="swipe"
@@ -96,32 +106,27 @@ function TinderCards() {
               backgroundImage : "url(" + rmit_er.url + ")",
             }}
             className="card"
-          >
+          > 
             <TinderBio 
                 name={rmit_er.name}
                 bio={rmit_er.bio}
                 bioTitle='Bio'
-                classname={classes.container}
+                classname={classes.bioBox}
               />
-            <div className={classes.root}>
+            <div className={classes.info}>
               <TinderCardChip
-                  icon={<CheckCircleOutlinedIcon />}
-                  label={rmit_er.YEAR}
-                  color="secondary"
-              />
-              <TinderCardChip
-                  icon={<GradeOutlinedIcon />}
+                  icon={<StarIcon />}
                   label={rmit_er.GPA}
                   color="secondary"
               />
               <h3>{rmit_er.name}</h3>
             </div>
           </div>
+          <div className="swipe__direction">
+            <p>You have swiped {lastDirection}</p>
+          </div>
         </TinderCard>
       ))}
-      <div className="swipe__direction">
-        <p>You have swiped {lastDirection}</p>
-      </div>
     </div>
   );
 }

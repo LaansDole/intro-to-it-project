@@ -12,14 +12,9 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 html {
-  background-color: #11071F;
-  background-image: url('./images/EclipseBackground.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center 220px;
+  background-color: white;
 }

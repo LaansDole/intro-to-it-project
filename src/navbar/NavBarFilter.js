@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
     color: "white",
-    backgroundColor: "#EC5E6F"
+    backgroundColor: "#F50057"
   },
   title: {
     marginLeft: theme.spacing(2),

@@ -23,8 +23,7 @@ export default function NavListSlider() {
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider"
         valueLabelDisplay="auto"
-        step={3}
-        marks
+        step={1}
         min={3}
         max={18}
         color="secondary"
