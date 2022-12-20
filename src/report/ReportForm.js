@@ -37,15 +37,15 @@ export default function ReportForm() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Let us know how this person is bothering you :)
+            Let us know how this person is bothering you
           </DialogContentText>
           <TextField autoFocus margin="dense" id="name" fullWidth />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleClose} color="secondary">
             Cancel
           </Button>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleClose} color="secondary">
             Save
           </Button>
         </DialogActions>
