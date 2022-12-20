@@ -1,7 +1,7 @@
 import React from "react";
 import "./SwipeButtons.css";
 
-import CloseIcon from "@material-ui/icons/Close";
+import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 import { ThumbUp } from "@material-ui/icons";
 import IconButton from "@material-ui/core/IconButton";
 import Snackbar from "@material-ui/core/Snackbar";
@@ -21,7 +21,7 @@ function SwipeButtons() {
   return (
     <div className="swipeButtons">
       <IconButton className="swipeButtons__dislike">
-        <CloseIcon style={{ fontSize: 60 }} className="closeIcon"/>
+        <CloseRoundedIcon style={{ fontSize: 60 }} className="closeIcon"/>
       </IconButton>
       <IconButton className="swipeButtons__like" onClick={handleClick}>
         <ThumbUp style={{ fontSize: 60 }} className="favIcon"/>

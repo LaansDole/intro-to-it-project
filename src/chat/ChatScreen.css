@@ -9,7 +9,8 @@
   text-align: center;
   padding: 20px;
   padding-top: 5vh;
-  color: black;
+  color: rgba(235, 87, 87, 1);
+  font-weight: 600;
 }
 
 .chatScreen__form {

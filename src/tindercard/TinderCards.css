@@ -30,9 +30,10 @@ h3 { /* placeholder for style */
 
 .swipe__direction {
     font-weight: bold;
-    position: relative;
+    position: absolute;
     text-align: center;
-    padding-top: 7vh;
+    margin-top: 56vh;
+    padding-top: 3vh;
     color: #F50057;
 }
 

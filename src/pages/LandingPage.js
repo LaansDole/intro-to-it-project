@@ -1,16 +1,11 @@
 import React from "react";
-// import TinderIcon from './images/tinMate_logo.png';
+import LandingCover from "../landing/LandingCover";
 
 const LandingPage = () => {
     return (
         <div>
-            {/* <img
-          className="header__logo"
-          src={TinderIcon}
-          alt="tinder logo"
-            /> */}
+            <LandingCover />
         </div>
-        
     )
 }
 export default LandingPage;

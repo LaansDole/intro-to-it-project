@@ -9,6 +9,18 @@ import Phuoc from '../images/Phuoc.jpg'
 const ChatBox = () => {
   return (
   <div className='chatbox'>
+    <div
+      style={{
+        padding: "20px",
+        color: "rgba(235, 87, 87, 1)",
+        letterSpacing: "-0.110526px",
+        fontStyle: "normal",
+        fontWeight: "bold",
+        fontSize: "21px",
+      }}
+    >
+      <p>Messages</p>
+    </div>
       <Chat
       name='Tuan Anh'
       message='Nice to meet you' 

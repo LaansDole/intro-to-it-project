@@ -122,11 +122,11 @@ function TinderCards() {
               <h3>{rmit_er.name}</h3>
             </div>
           </div>
-          <div className="swipe__direction">
-            <p>You have swiped {lastDirection}</p>
-          </div>
         </TinderCard>
       ))}
+       <div className="swipe__direction">
+          <p>You have swiped {lastDirection}</p>
+        </div>
     </div>
   );
 }
