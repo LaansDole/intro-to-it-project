@@ -1,24 +1,19 @@
 .card {
     position: relative;
     width: 600px;
-    padding: 20px;
+    padding: 22px;
     max-width: 85vw;
-    height: 48vh;
-    border-radius: 20px;
+    height: 56vh;
+    border-radius: 30px;
     background-size: cover;
     background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-    /* box-shadow: 0px 14px 45px 0px rgba(0,0,0,0.3); */
 }
 
 h3 { /* placeholder for style */
     font-size: 27px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-radius: 30px;
-    border: 0;
-    color: white;
-    height: 48;
+    color: whitesmoke;
     /* box-shadow: radial-gradient(circle, rgba(26,11,46,1) 0%, rgba(152,94,236,1) 60%); */
 }
 
@@ -26,21 +21,6 @@ h3 { /* placeholder for style */
     display: flex;
     justify-content: center;
     margin-top: 9vh;
-}
-
-.swipe__direction {
-    font-weight: bold;
-    position: absolute;
-    text-align: center;
-    margin-top: 56vh;
-    padding-top: 3vh;
-    color: #F50057;
-}
-
-@media screen and (max-width: 700px) and (max-height: 680px) {
-    .swipe__direction {
-        display: none
-    }
 }
 
 /* stacks cards on top of each other */

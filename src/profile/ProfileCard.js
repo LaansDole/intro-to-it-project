@@ -4,7 +4,7 @@ import "../tindercard/TinderCards.css";
  //We do not use database from firebase but RMIT instead
 import TinderCardChip from "../tindercard/TinderChip";
 import { makeStyles } from '@material-ui/core/styles';
-import HomeIcon from '@material-ui/icons/Home';
+import SchoolIcon from '@material-ui/icons/School';
 import LanguageIcon from '@material-ui/icons/Language';
 import GradeIcon from '@material-ui/icons/Grade';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
@@ -12,11 +12,11 @@ import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 import Hey from '../images/Hey.PNG'
 import Hi from '../images/Hi.png'
 import Meme from '../images/Meme.png'
-import TV from '../images/TV.png'
+import Tony from '../images/Tony.jpg'
 
 const profileDB = [
     {
-        about: 'ReactJS, C++, JSS',
+        about: 'Skills: ReactJS, JSS',
         icon: <EmojiEventsIcon />,
         color: 'secondary',
         url: Hey
@@ -25,17 +25,17 @@ const profileDB = [
         about: 'GPA: 3.7/4.0',
         icon: <GradeIcon />,
         color: 'secondary',
-        url: TV
+        url: Tony
     },
     {
-        about: 'Web Development',
+        about: 'Aim: Web Development',
         icon: <LanguageIcon />,
         color: 'secondary',
         url: Hi
     },
     {
-        about: 'School: SSET-IT',
-        icon: <HomeIcon />,
+        about: 'Program: SSET - IT',
+        icon: <SchoolIcon />,
         color: 'secondary',
         url: Meme
     }
@@ -48,16 +48,16 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "space-between",
         alignContent: "flex-start",
       flexWrap: 'wrap',
-      transform: "translateY(13em)",
-      paddingBottom: "15px",
-      '& > *': {
-        margin: theme.spacing(0.5),
+      transform: "translateY(15em)", // for normal screen
+      maxWidth: "240px",
+      '@media screen and (max-width: 1200px) and (orientation: landscape)': {
+        transform: "translateY(14em)",
       },
-      '@media screen and (min-height: 1000px)': {
-          transform: "translateY(18em)",
+      '@media screen and (max-height: 700px) and (orientation: landscape)': {
+        transform: "translateY(11em)",
       },
-      '@media screen and (max-width: 540px) and (max-height: 750px)': {
-        transform: "translateY(12em)",
+      '@media screen and (max-width: 400px) and (max-height: 750px)': {
+        transform: "translateY(14em)",
       }
     },
     swiped: {
@@ -99,6 +99,7 @@ export default function ProfileCard() {
             >
                 <div className={classes.root}>
                 <TinderCardChip
+                    size="large"
                     label={rmit_er.about}
                     icon={rmit_er.icon}
                     color={rmit_er.color}

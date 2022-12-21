@@ -41,24 +41,28 @@ const db = [
 
 const useStyles = makeStyles((theme) => ({
   info: {
-    backdropFilter: "brightness(90%) blur(3px)",
+    backdropFilter: "brightness(70%)",
+    borderRadius: "30px",
+    padding: "8px",
+    position: "relative",
     display: 'flex',
     flexDirection: "column-reverse",
         alignContent: "flex-start",
     flexWrap: 'wrap',
-    transform: "translateY(12em)",
-    // maxWidth: "250px",
+    transform: "translateY(12em)", // for normal screen
+    maxWidth: "240px",
+    boxShadow: "rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset",
     '& > *': {
       margin: theme.spacing(0.5),
     },
-    '@media screen and (max-width: 1200px)': {
+    '@media screen and (max-width: 1200px) and (orientation: landscape)': {
       transform: "translateY(10em)",
     },
-    '@media screen and (min-height: 1000px)': {
-        transform: "translateY(15em)",
+    '@media screen and (max-height: 700px) and (orientation: landscape)': {
+      transform: "translateY(7em)",
     },
-    '@media screen and (max-width: 540px) and (max-height: 750px)': {
-      transform: "translateY(8em)",
+    '@media screen and (max-width: 400px) and (max-height: 750px)': {
+      transform: "translateY(10em)",
     }
   },
   bioBox: {
@@ -76,7 +80,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "-50px",
     position: "absolute",
     textAlign: "center",
-    color: "#f50057"
+    color: "#f50057",
+    '@media screen and (max-height: 550px) and (orientation: landscape)': {
+      display: "none",
+    }
   }
 }));
 
@@ -115,6 +122,7 @@ function TinderCards() {
               />
             <div className={classes.info}>
               <TinderCardChip
+                  size="small"
                   icon={<StarIcon />}
                   label={rmit_er.GPA}
                   color="secondary"
@@ -124,9 +132,6 @@ function TinderCards() {
           </div>
         </TinderCard>
       ))}
-       <div className="swipe__direction">
-          <p>You have swiped {lastDirection}</p>
-        </div>
     </div>
   );
 }
