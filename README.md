@@ -1,4 +1,6 @@
 # View our project demo here: [TinMate Project Demo](https://intro-to-it-tinmate.netlify.app/)
+#### Project started date: 14/11/2022
+#### Project finished date: 31/12/2022
 
 ### Course Information
 
@@ -15,7 +17,7 @@
 ### Contributors (Roles)
 
 - Supervisor: Mr. Long Nguyen Minh
-- Frontend Developer: Do Le Long An - s3963207
+- Technical Leader: Do Le Long An - s3963207
 - Frontend Developer: Bui Tuan Anh
 - Frontend Developer: Pham Le Quynh Anh
 - UI/UX Designer and Tester: Do My Phuoc
