@@ -11,17 +11,13 @@ import Divider from "@material-ui/core/Divider";
 import AppTheme from "../AppTheme";
 
 const useStyles = makeStyles((theme) => ({
-    appBar: {
-        position: "relative",
-        color: "aquamarine",
-    },
     title: {
         marginLeft: theme.spacing(5),
         fontFamily: "Times New Roman",
         fontWeight: "bold",
         fontSize: "x-large",
     },
-    content: {
+    bio: {
         fontFamily: "Times New Roman",
         fontWeight: "bold",
         fontSize: "large",
@@ -29,12 +25,12 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center"
     },
-    root: {
+    dialog: {
         display: "flex",
         justifyContent: "flex-start",
         alignItems: 'center',
     },
-    bio: {
+    button: {
         fontFamily: "Times New Roman",
         fontWeight: "bold",
     },
@@ -53,28 +49,28 @@ export default function TinderBio({name, bio, bioTitle, classname}) {
     };
     return (
         <div className={classname}>
-            <IconButton color="secondary" onClick={handleClickOpen} className={classes.bio}>
+            <IconButton color="secondary" onClick={handleClickOpen} className={classes.button}>
                 <FingerprintIcon color="secondary" fontSize="small" />
                 {bioTitle}
             </IconButton>
             <AppTheme>
                 <Dialog fullWidth open={open} onClose={handleClose}>
-                    <DialogContent className={classes.root}>
+                    <DialogContent className={classes.dialog}>
                         <IconButton
                         edge="end"
-                        color="inherit"
+                        color="secondary"
                         onClick={handleClose}
                         aria-label="close"
                         >
                             <CloseIcon />
                         </IconButton>
                         <Typography variant="h6" className={classes.title}>
-                            {name}'s Bio
+                            About: {name}
                         </Typography>
                     </DialogContent>
                     <Divider />
                     <DialogContent>
-                        <Typography variant="h5" className={classes.content}>
+                        <Typography variant="body1" className={classes.bio}>
                             {bio}
                         </Typography>
                     </DialogContent>

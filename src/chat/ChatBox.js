@@ -28,7 +28,7 @@ const ChatBox = () => {
       profilePic={TuanAnh}
       />
       <Chat
-      name='Phuoc'
+      name='My Phuoc'
       message="How's the weather?"
       timestamp='1h ago' 
       profilePic={Phuoc}
@@ -40,7 +40,7 @@ const ChatBox = () => {
       profilePic={QAnh}
       />
       <Chat
-      name='Tony'
+      name='Long An'
       message='Are you taking Intro to IT this sem?' 
       timestamp='5s ago' 
       profilePic={Tony}

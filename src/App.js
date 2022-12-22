@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./header/Header";
 import ChatBox from "./chat/ChatBox";
 import ChatScreen from "./chat/ChatScreen";
+import ChatScrSend from "./chat/ChatScrSend";
 import ProfilePage from "./profile/ProfilePage";
 import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
@@ -15,7 +16,8 @@ function App() {
           <Switch>
             <Route path="/chat/:person">
               <Header backButton="/chat" />
-              <ChatScreen/>
+              <ChatScreen />
+              <ChatScrSend />
             </Route>
             <Route path="/chat">
               <Header backButton="/homepage" />

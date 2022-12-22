@@ -14,7 +14,7 @@ import Tony from "../images/AnDo.JPG"
 
 const db = [
   {
-    bio:"Hi, my name is Do Le Long An and I am learning to be a Web Developer",
+    bio:"Hi, my name is Do Le Long An and I am learning to be a Fullstack Web Developer. Currently, I am self-teaching the frontend so that I can then focus more on the backend, AWS and DevOps in the upcoming courses! ",
     GPA: "3.7/4.0",
     name: "Long An, SSET",
     url: Tony
@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     textAlign: "center",
     color: "#f50057",
-    '@media screen and (max-height: 550px) and (orientation: landscape)': {
+    '@media screen and (max-height: 550px)': {
       display: "none",
     }
   }

@@ -33,6 +33,7 @@ const themeOverride = createTheme({
         MuiDialog: {
           paper: {
             borderRadius: "40px",
+            // backgroundColor: "#F50057"
           }
         },
         MuiBottomNavigationAction: {
@@ -53,6 +54,13 @@ const themeOverride = createTheme({
           root: {
             color: "#adafbb",
           }
+        },
+        MuiTypography: {
+          root: {
+            // color: "white",
+            padding: "10px",
+          },
+          
         },
     }
   });
