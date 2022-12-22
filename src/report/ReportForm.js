@@ -23,7 +23,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     backgroundColor: "#f50057",
     color: "white",
-    marginLeft: "-5px"
+  },
+  dialog: {
+    borderRadius: "30px",
   }
 }));
 
@@ -51,6 +53,7 @@ export default function ReportForm() {
         open={open}
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
+        className={classes.dialog}
       >
         <DialogTitle id="form-dialog-title" className={classes.title}>
           Report Improper Behavior
