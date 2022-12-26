@@ -11,15 +11,13 @@ const ChatBox = () => {
   <div className='chatbox'>
     <div
       style={{
+        fontFamily:"Nunito",
         padding: "20px",
         color: "rgba(235, 87, 87, 1)",
         letterSpacing: "-0.110526px",
-        fontStyle: "normal",
-        fontWeight: "bold",
-        fontSize: "21px",
       }}
     >
-      <p>Messages</p>
+      <p>Messages / New Matches</p>
     </div>
       <Chat
       name='Tuan Anh'

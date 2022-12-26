@@ -66,7 +66,6 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       color: "#f50057",
       marginTop: "-60px",
-      paddingBottom: "7px"
     }
   }));
 
@@ -82,7 +81,7 @@ export default function ProfileCard() {
     return (
     <div className="tinderCards__cardContainer">
         <div className={classes.swiped}>
-          <p>You swipe {lastDirection} on Tony</p>
+          <p>Swipe {lastDirection} to know more about An</p>
         </div>
         {profile.map((rmit_er) => (
         <TinderCard
