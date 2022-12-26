@@ -1,11 +1,7 @@
 import React from "react";
 import ProfileCard from './ProfileCard'
-import TinderBio from '../tindercard/TinderBio'
 import { Avatar } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
-import NavBarFilter from "../navbar/NavBarFilter";
-import Fab from '@material-ui/core/Fab';
-import EditIcon from '@material-ui/icons/Edit';
 import An from '../images/AnDo.JPG'
 import Divider from "@material-ui/core/Divider";
 
@@ -32,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "Nunito",
         padding: "0px 20px 40px",
         fontSize: "36px",
-        color: "rgba(235, 87, 87, 1)",
+        // color: "rgba(235, 87, 87, 1)",
     },
     bio: {
         fontStyle: "italic",
