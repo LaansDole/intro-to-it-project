@@ -29,7 +29,6 @@
 
 ### Disclaimer: <em>To avoid messing up with each other part in the project, our team decide to have separate repo to reivew each other works and finalize on Do Le Long An's repo</em>
 
-<br />
 ### Project Information
 
 - Project name: TinMate
