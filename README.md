@@ -1,5 +1,7 @@
 # View our project demo here: [TinMate Project Demo](https://intro-to-it-tinmate.netlify.app/)
+
 #### Project started date: 14/11/2022
+
 #### Project finished date: 31/12/2022
 
 ### Course Information
@@ -18,10 +20,16 @@
 
 - Supervisor: Mr. Long Nguyen Minh
 - Technical Leader: Do Le Long An - s3963207
-- Frontend Developer: Bui Tuan Anh
-- Frontend Developer: Pham Le Quynh Anh
-- UI/UX Designer and Tester: Do My Phuoc
+- Frontend Developer: Bui
+  Tuan Anh's GitHub Repo: [Tuan Anh's Repo for Tinmate project](https://github.com/vntuananhbui/Tinmate)
+- Frontend Developer: Pham Le
+  Quynh Anh's GitHub Repo: [Quynh Anh's Repo for Tinmate project](https://github.com/plqanhh/TinMate-KellyVer.git)
+- UI/UX Designer and Tester: Do My
+  Phuoc's Canva Design: [Phuoc's UI Design for Tinmate project](https://www.canva.com/design/DAFRWQ1b_Ag/-jP1FKJsMQ1oryzxg_-ubw/view?utm_content=DAFRWQ1b_Ag&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+### Disclaimer: <em>To avoid messing up with each other part in the project, our team decide to have separate repo to reivew each other works and finalize on Do Le Long An's repo</em>
+
+<br />
 ### Project Information
 
 - Project name: TinMate
@@ -37,12 +45,13 @@
 
 #### Project started date: 14/11/2022
 
-#### Project finished date: 24/12/2022
+#### Project finished date: 31/12/2022
 
 ### Supporting tools used
 
 - UI Prototype: Figma, Canva
 - Prototyping IDE for visualization: CodeSandbox
+
 ### To Run
 
 ## Available Scripts
