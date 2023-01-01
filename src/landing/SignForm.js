@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const SignForm = ({link, children, buttonName}) => {
+const SignForm = ({link, alertMsg, children, buttonName}) => {
     const classes = useStyles();
     return (
   <div>
@@ -24,7 +24,8 @@ const SignForm = ({link, children, buttonName}) => {
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
         console.log(values);
-        window.location.replace({link});
+        alert(`${alertMsg}`)
+        window.location.replace(`${link}`);
       }}
     >
         <Form>

@@ -8,7 +8,8 @@ const LandingPage = () => {
         <div>
             <LandingCover />
             <SignForm 
-            link="https://intro-to-it-tinmate.netlify.app/"
+            alertMsg="Incorrect password or email"
+            link="/"
             buttonName="Sign In" 
             />
              <div style={{
