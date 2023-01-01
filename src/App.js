@@ -7,6 +7,8 @@ import ChatScrSend from "./chat/ChatScrSend";
 import ProfilePage from "./profile/ProfilePage";
 import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
+import SignUpPage from "./pages/SignUpPage";
+
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { makeStyles } from "@material-ui/core";
@@ -53,6 +55,9 @@ function App() {
             <Route path="/homepage">
               <Header />
               <HomePage />
+            </Route>
+            <Route path="/signup">
+              <SignUpPage />
             </Route>
             <Route path="/">
               <LandingPage />

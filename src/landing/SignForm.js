@@ -1,22 +1,18 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
 import { makeStyles, TextField } from "@material-ui/core";
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         transform: "translateY(-50px)",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
         '& > *': {
-        margin: theme.spacing(1),
-        width: '40ch',
+        margin: theme.spacing(1.5),
       },
     },
 }));
 
-const SignForm = () => {
+const SignForm = ({link, children, buttonName}) => {
     const classes = useStyles();
     return (
   <div>
@@ -28,29 +24,52 @@ const SignForm = () => {
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
         console.log(values);
-        alert("Incorrect password or email");
+        window.location.replace({link});
       }}
     >
-      <Form className={classes.root}>
-        <TextField 
-        required
-        id="email" 
-        name="email" 
-        label="email"
-        variant="outlined"
-        color="secondary"
-        type="email"
-        />
-        <TextField 
-        required
-        id="outlined-basic" 
-        label="password"
-        type="password" 
-        variant="outlined" 
-        color="secondary" 
-        />  
-        <button type="submit">Submit</button>
-      </Form>
+        <Form>
+            <Grid 
+            container 
+            direction="column"
+            justifyContent="center"
+            alignItems="stretch"
+            className={classes.root}
+            >
+            {children}
+            <TextField 
+            required
+            id="email" 
+            name="email" 
+            label="Email"
+            variant="outlined"
+            color="secondary"
+            type="email"
+            />
+            <TextField 
+            required
+            id="outlined-basic" 
+            label="Password"
+            type="password" 
+            variant="outlined" 
+            color="secondary" 
+            />  
+            <button 
+            type="submit"
+            style={{
+                color: "white",
+                fontFamily: "Nunito",
+                fontWeight: "bold",
+                fontSize: "25px",
+                backgroundColor: "#F50057",
+                borderRadius: "30px",
+                border: "none",
+                padding: "10px"
+            }}
+            >
+                {buttonName}
+            </button>
+            </Grid>
+        </Form>
     </Formik>
   </div>
     )
