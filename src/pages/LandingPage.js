@@ -7,7 +7,6 @@ const LandingPage = () => {
         <div>
             <LandingCover />
             <SignForm />
-            
         </div>
     )
 }

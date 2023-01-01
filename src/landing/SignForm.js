@@ -5,10 +5,13 @@ import { makeStyles, TextField } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
     root: {
         transform: "translateY(-50px)",
-        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
         '& > *': {
         margin: theme.spacing(1),
-        width: '30ch',
+        width: '40ch',
       },
     },
 }));
@@ -24,6 +27,7 @@ const SignForm = () => {
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
+        console.log(values);
         alert("Incorrect password or email");
       }}
     >

@@ -6,6 +6,7 @@ import An from '../images/AnDo.JPG'
 import Divider from "@material-ui/core/Divider";
 import NavBarFilter from "../navbar/NavBarFilter";
 import EditIcon from '@material-ui/icons/Edit';
+import { Tooltip } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
@@ -53,8 +54,13 @@ const ProfilePage = () => {
                 justifyContent: "flex-end",
                 transform: 'translateY(-75px)',
             }}>
+
                 <NavBarFilter
-                    icon={<EditIcon fontSize="large" />}
+                    icon={
+                    <Tooltip title="Edit">
+                        <EditIcon fontSize="large" style={{paddingRight: "20px"}} />
+                    </Tooltip>
+                    }
                     // icon="Edit Profile"
                     title="Edit Profile"
                 />
