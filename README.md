@@ -42,10 +42,6 @@
 - Frontend: CSS, ReactJS, Material UI
 - Hosting: Netlify
 
-#### Project started date: 14/11/2022
-
-#### Project finished date: 31/12/2022
-
 ### Supporting tools used
 
 - UI Prototype: Figma, Canva
