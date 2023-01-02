@@ -8,8 +8,8 @@ const LandingPage = () => {
         <div>
             <LandingCover />
             <SignForm 
-            alertMsg="Incorrect password or email"
-            link="/"
+            alertMsg='Incorrect password or email'
+            link='/'
             buttonName="Sign In" 
             />
              <div style={{
