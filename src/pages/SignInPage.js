@@ -9,7 +9,7 @@ const SignInPage = () => {
             <LandingCover />
             <SignForm 
             alertMsg='Incorrect password or email'
-            link='/'
+            link='/signin'
             buttonName="Sign In" 
             />
             <div style={{

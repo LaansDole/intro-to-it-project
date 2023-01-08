@@ -69,7 +69,7 @@ const SignUpPage = () => {
                 padding: '20px'
             }}>
                 <p>Already have an account? </p>
-                <Link href="/" 
+                <Link href="/signin" 
                 style={{paddingTop: "10px"}}
                 color="secondary"
                 > 
