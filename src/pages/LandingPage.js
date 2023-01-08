@@ -1,34 +1,11 @@
 import React from "react";
 import LandingCover from "../landing/LandingCover";
-import SignForm from "../landing/SignForm";
-import { Link } from '@material-ui/core';
+import { Link } from "react-router-dom";
 
-const LandingPage = () => {
+function LandingPage() {
     return (
-        <div>
-            <LandingCover />
-            <SignForm 
-            alertMsg='Incorrect password or email'
-            link='/'
-            buttonName="Sign In" 
-            />
-             <div style={{
-                display: "flex",
-                flexDirection: 'column',
-                justifyContent: "space-between",
-                alignItems: 'center',
-                fontFamily: "Nunito",
-                fontWeight: 'bold',
-                padding: '20px'
-            }}>
-                <p>Don't have an account? </p>
-                <Link href="/signup" 
-                style={{paddingTop: "10px"}}
-                color="secondary"
-                > 
-                Sign Up</Link>
-            </div>
-        </div>
+        <LandingCover />
     )
 }
-export default LandingPage;
+
+export default LandingPage
