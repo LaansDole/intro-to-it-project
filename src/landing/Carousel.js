@@ -46,7 +46,7 @@ const tutorialSteps = [
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 600,
+    maxWidth: 700,
     flexGrow: 1,
     display: "block",
     marginLeft: "auto",
@@ -64,10 +64,13 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height: 455,
     display: 'block',
-    maxWidth: 600,
+    maxWidth: 700,
     overflow: 'hidden',
     width: '100%',
     objectFit: "cover",
+  },
+  button: {
+
   },
 }));
 
@@ -91,42 +94,43 @@ function Carousel() {
 
   return (
     <div className={classes.root}>
-      <Paper square elevation={0} className={classes.header}>
-        <Typography>{tutorialSteps[activeStep].label}</Typography>
-      </Paper>
-      <AutoPlaySwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-      >
-        {tutorialSteps.map((step, index) => (
-          <div key={step.label}>
-            {Math.abs(activeStep - index) <= 2 ? (
-              <img className={classes.img} src={step.imgPath} alt={step.label} />
-            ) : null}
-          </div>
-        ))}
-      </AutoPlaySwipeableViews>
-      <MobileStepper
-        style={{backgroundColor: "white"}}
-        steps={maxSteps}
-        position="static"
-        variant="dots"
-        activeStep={activeStep}
-        nextButton={
-          <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-            Next
-            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
-          </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-            Back
-          </Button>
-        }
-      />
+        <Paper square elevation={0} className={classes.header}>
+            <Typography>{tutorialSteps[activeStep].label}</Typography>
+        </Paper>
+        <AutoPlaySwipeableViews
+            axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+            index={activeStep}
+            onChangeIndex={handleStepChange}
+            enableMouseEvents
+        >
+            {tutorialSteps.map((step, index) => (
+            <div key={step.label}>
+                {Math.abs(activeStep - index) <= 2 ? (
+                <img className={classes.img} src={step.imgPath} alt={step.label} />
+                ) : null}
+            </div>
+            ))}
+        </AutoPlaySwipeableViews>
+        <MobileStepper
+            style={{backgroundColor: "white"}}
+            steps={maxSteps}
+            position="static"
+            variant="dots"
+            activeStep={activeStep}
+            nextButton={
+            <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+                Next
+                {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+            </Button>
+            }
+            backButton={
+            <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+                {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+                Back
+            </Button>
+            }
+        />
+
     </div>
   );
 }
