@@ -9,10 +9,10 @@ const SignInPage = () => {
             <LandingCover />
             <SignForm 
             alertMsg='Incorrect password or email'
-            link='/signin'
+            link='/'
             buttonName="Sign In" 
             />
-             <div style={{
+            <div style={{
                 display: "flex",
                 flexDirection: 'column',
                 justifyContent: "space-between",

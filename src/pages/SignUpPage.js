@@ -6,6 +6,7 @@ import { IconButton } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 import { PhotoCamera } from "@material-ui/icons";
 import { Tooltip } from "@material-ui/core";
+import { Link } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     upload: {
@@ -58,6 +59,22 @@ const SignUpPage = () => {
                 placeholder="Do Le Long An"
                 />
             }/>
+            <div style={{
+                display: "flex",
+                flexDirection: 'column',
+                justifyContent: "space-between",
+                alignItems: 'center',
+                fontFamily: "Nunito",
+                fontWeight: 'bold',
+                padding: '20px'
+            }}>
+                <p>Already have an account? </p>
+                <Link href="/" 
+                style={{paddingTop: "10px"}}
+                color="secondary"
+                > 
+                Sign In</Link>
+            </div>
         </div>
     )
 }

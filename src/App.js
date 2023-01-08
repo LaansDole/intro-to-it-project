@@ -8,7 +8,6 @@ import ProfilePage from "./profile/ProfilePage";
 import HomePage from "./pages/HomePage";
 import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
-import LandingPage from "./pages/LandingPage";
 
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -60,11 +59,8 @@ function App() {
             <Route path="/signup">
               <SignUpPage />
             </Route>
-            <Route path="/signin">
-              <SignInPage />
-            </Route>
             <Route path="/">
-              <LandingPage />
+              <SignInPage />
             </Route>
           </Switch>
       </Router>

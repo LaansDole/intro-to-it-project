@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import { makeStyles, TextField } from "@material-ui/core";
 import { Grid } from '@material-ui/core';
+import { Widgets } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -64,7 +65,11 @@ const SignForm = ({link, alertMsg, children, buttonName}) => {
                 backgroundColor: "#F50057",
                 borderRadius: "30px",
                 border: "none",
-                padding: "10px"
+                padding: "15px",
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+                width: "60%"
             }}
             >
                 {buttonName}
