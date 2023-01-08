@@ -8,7 +8,7 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import Group4 from '../images/Tony.jpg'
+import Group4 from '../images/Group4.JPG'
 import Tony from '../images/AnDo.JPG'
 import TuanAnh from '../images/TuanAnh.jpg'
 import QuynhAnh from '../images/QAnh.jpg'
