@@ -2,7 +2,6 @@ import React from "react";
 import LandingCover from "../landing/LandingCover";
 import Carousel from "../landing/Carousel";
 import Button from '@material-ui/core/Button';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { Link } from '@material-ui/core';
 
 function LandingPage() {
