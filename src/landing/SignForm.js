@@ -6,8 +6,13 @@ import { Grid } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     root: {
         transform: "translateY(-50px)",
+        display: "flex",
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: "center",
         '& > *': {
         margin: theme.spacing(1.5),
+        width: "75%",
       },
     },
 }));
