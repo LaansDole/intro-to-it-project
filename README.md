@@ -1,4 +1,10 @@
 # View our project demo here: [TinMate Project Demo](https://intro-to-it-tinmate.netlify.app/)
+# View our project documentation here: [Intro to IT report](https://intro-to-it-report-html.netlify.app/) 
+### Report credited to:
+- Do Le Long An - s3963207
+- [Pham Le Quynh Anh](https://github.com/plqanhh/Report-HTML) - s3927427
+- Bui Tuan Anh - s3970375
+- Do My Phuoc - s3836234
 
 #### Project started date: 14/11/2022
 
@@ -20,12 +26,6 @@
 
 - Supervisor: Mr. Long Nguyen Minh
 - Technical Leader: Do Le Long An - s3963207
-- Frontend Developer: Bui
-  Tuan Anh's GitHub Repo: [Tuan Anh's Repo for Tinmate project](https://github.com/vntuananhbui/Tinmate)
-- Frontend Developer: Pham Le
-  Quynh Anh's GitHub Repo: [Quynh Anh's Repo for Tinmate project](https://github.com/plqanhh/TinMate-KellyVer.git)
-- UI/UX Designer and Tester: Do My
-  Phuoc's Canva Design: [Phuoc's UI Design for Tinmate project](https://www.canva.com/design/DAFRWQ1b_Ag/-jP1FKJsMQ1oryzxg_-ubw/view?utm_content=DAFRWQ1b_Ag&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### Disclaimer: <em>To avoid messing up with each other part in the project, our team decide to have separate repo to reivew each other works and finalize on Do Le Long An's repo</em>
 
