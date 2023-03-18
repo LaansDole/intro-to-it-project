@@ -27,8 +27,6 @@
 - Supervisor: Mr. Long Nguyen Minh
 - Technical Leader: Do Le Long An - s3963207
 
-### Disclaimer: <em>To avoid messing up with each other part in the project, our team decide to have separate repo to reivew each other works and finalize on Do Le Long An's repo</em>
-
 ### Project Information
 
 - Project name: TinMate
