@@ -1,5 +1,6 @@
-# View our project demo here: [TinMate Project Demo](https://intro-to-it-tinmate.netlify.app/)
-# View our project documentation here: [Intro to IT report](https://intro-to-it-report-html.netlify.app/) 
+# TinMate for finding teammates
+- View our project demo here: [TinMate Project Demo](https://intro-to-it-tinmate.netlify.app/)
+- View our project documentation here: [Intro to IT report](https://intro-to-it-report-html.netlify.app/) 
 ### Report credited to:
 - Do Le Long An - s3963207
 - [Pham Le Quynh Anh](https://github.com/plqanhh/Report-HTML) - s3927427
